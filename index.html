@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>خاموش کرن | مسف خضر</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Georgia, "Noto Nastaliq Urdu", serif;
+    color:white;
+    background:
+    linear-gradient(rgba(30,25,18,.55),rgba(30,25,18,.75)),
+    url("cover.jpg") center/cover fixed;
+}
+
+.header{
+    text-align:center;
+    padding:35px 15px 20px;
+}
+
+.author{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.collection{
+    font-size:18px;
+    margin-top:8px;
+}
+
+.search{
+    width:90%;
+    max-width:650px;
+    margin:30px auto;
+    display:flex;
+    background:rgba(255,255,255,.8);
+    border-radius:40px;
+    overflow:hidden;
+}
+
+.search input{
+    flex:1;
+    border:0;
+    outline:0;
+    padding:18px 25px;
+    font-size:18px;
+    background:transparent;
+}
+
+.search button{
+    border:0;
+    padding:0 28px;
+    font-size:18px;
+    color:#7b4217;
+    background:transparent;
+}
+
+.book{
+    width:92%;
+    max-width:650px;
+    margin:30px auto 60px;
+    background:rgba(35,25,15,.75);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.cover{
+    width:100%;
+    display:block;
+}
+
+.book-content{
+    padding:25px;
+}
+
+.book-title{
+    font-size:34px;
+    margin:0 0 10px;
+}
+
+.description{
+    font-size:19px;
+    line-height:2;
+    color:#ddd;
+}
+
+.read-button{
+    display:inline-block;
+    margin-top:15px;
+    padding:13px 30px;
+    border-radius:30px;
+    background:#a95d18;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.reader{
+    width:92%;
+    max-width:800px;
+    margin:70px auto;
+    background:#fffaf3;
+    color:#29221d;
+    padding:30px;
+    border-radius:18px;
+    line-height:2.4;
+}
+
+.reader h2{
+    text-align:center;
+    color:#75452b;
+    font-size:32px;
+}
+
+.download{
+    display:block;
+    text-align:center;
+    background:#75452b;
+    color:white;
+    padding:13px;
+    border-radius:30px;
+    text-decoration:none;
+    margin:30px 0;
+}
+
+.feedback{
+    width:92%;
+    max-width:650px;
+    margin:50px auto;
+    background:rgba(35,25,15,.8);
+    padding:25px;
+    border-radius:18px;
+}
+
+.feedback input,
+.feedback textarea{
+    width:100%;
+    padding:13px;
+    margin:7px 0;
+    border:0;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.feedback button{
+    background:#a95d18;
+    color:white;
+    border:0;
+    padding:12px 25px;
+    border-radius:25px;
+    font-size:16px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="author">
+        Author • مسف خضر
+    </div>
+
+    <div class="collection">
+        Books Collection
+    </div>
+
+</div>
+
+
+<div class="search">
+
+    <input
+    type="text"
+    placeholder="Search a Book"
+    value="خاموش کرن">
+
+    <button>Search</button>
+
+</div>
+
+
+<div class="book">
+
+    <!-- آپ کا cover بعد میں cover.jpg کے نام سے یہاں آئے گا -->
+
+    <img
+    src="cover.jpg"
+    class="cover"
+    alt="خاموش کرن">
+
+    <div class="book-content">
+
+        <h1 class="book-title">
+            خاموش کرن
+        </h1>
+
+        <p class="description">
+            ایک ایسی کہانی جس میں خاموشی بھی بہت کچھ کہتی ہے۔
+            یہاں آپ اپنے ناول کا اصل تعارف لکھ سکتی ہیں۔
+        </p>
+
+        <a href="#reading" class="read-button">
+            Read More
+        </a>
+
+    </div>
+
+</div>
+
+
+<section id="reading" class="reader">
+
+    <h2>
+        خاموش کرن
+    </h2>
+
+    <p style="text-align:center;">
+        تحریر: مسف خضر
+    </p>
+
+    <hr>
+
+    <h2>
+        باب اول
+    </h2>
+
+    <p>
+        یہاں آپ اپنے ناول کا پہلا باب لکھیں گی۔
+    </p>
+
+    <p>
+        جب آپ کا ناول مکمل ہو جائے گا تو آپ یہاں
+        اپنے اصل chapters paste کر سکتی ہیں۔
+    </p>
+
+    <a
+    class="download"
+    href="khamoosh-kiran.pdf"
+    download>
+        📥 مکمل ناول Download کریں
+    </a>
+
+</section>
+
+
+<div class="feedback">
+
+    <h2>
+        Readers Feedback
+    </h2>
+
+    <p>
+        ناول پڑھنے کے بعد اپنی رائے ضرور دیں۔
+    </p>
+
+    <input
+    type="text"
+    placeholder="آپ کا نام">
+
+    <textarea
+    rows="5"
+    placeholder="اپنی رائے لکھیں..."></textarea>
+
+    <button>
+        Feedback Send کریں
+    </button>
+
+</div>
+
+
+<footer>
+    © 2026 مسف خضر — خاموش کرن
+</footer>
+
+</body>
+  </html>

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>خاموش کرن | مسف خضر</title>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>مسف خضر | میری تحریری دنیا</title>
 
 <style>
 
@@ -12,281 +16,536 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     margin:0;
     font-family:Georgia, "Noto Nastaliq Urdu", serif;
-    color:white;
     background:
-    linear-gradient(rgba(30,25,18,.55),rgba(30,25,18,.75)),
-    url("cover.jpg") center/cover fixed;
+    linear-gradient(rgba(24,18,15,.88),rgba(24,18,15,.95)),
+    #211914;
+    color:#fff;
 }
 
-.header{
+/* HEADER */
+
+header{
     text-align:center;
-    padding:35px 15px 20px;
+    padding:55px 20px 35px;
 }
 
-.author{
-    font-size:24px;
-    font-weight:bold;
-}
-
-.collection{
-    font-size:18px;
-    margin-top:8px;
-}
-
-.search{
-    width:90%;
-    max-width:650px;
-    margin:30px auto;
+.logo-space{
+    width:110px;
+    height:110px;
+    margin:0 auto 25px;
+    border:2px solid #c88b50;
+    border-radius:50%;
     display:flex;
-    background:rgba(255,255,255,.8);
-    border-radius:40px;
-    overflow:hidden;
+    align-items:center;
+    justify-content:center;
+    color:#c88b50;
+    font-size:14px;
 }
 
-.search input{
-    flex:1;
-    border:0;
-    outline:0;
-    padding:18px 25px;
+.author-name{
+    font-size:38px;
+    color:#f0c08b;
+    margin:0;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#d8c8bd;
     font-size:18px;
-    background:transparent;
 }
 
-.search button{
-    border:0;
-    padding:0 28px;
-    font-size:18px;
-    color:#7b4217;
-    background:transparent;
-}
+/* GENERAL SECTIONS */
 
-.book{
+section{
     width:92%;
-    max-width:650px;
-    margin:30px auto 60px;
-    background:rgba(35,25,15,.75);
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 10px 35px rgba(0,0,0,.35);
+    max-width:850px;
+    margin:35px auto;
 }
 
-.cover{
-    width:100%;
-    display:block;
+.section-title{
+    text-align:center;
+    font-size:30px;
+    color:#e5ad72;
+    margin-bottom:25px;
 }
 
-.book-content{
-    padding:25px;
+.card{
+    background:rgba(48,35,28,.85);
+    border:1px solid rgba(210,160,110,.2);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
 }
 
-.book-title{
-    font-size:34px;
-    margin:0 0 10px;
+/* AUTHOR */
+
+.author-text{
+    font-size:18px;
+    line-height:2.5;
+    color:#eee;
+    text-align:right;
 }
 
-.description{
-    font-size:19px;
+/* BOOK COLLECTION */
+
+.book-card{
+    text-align:center;
+    padding:35px 25px;
+}
+
+.book-card h3{
+    font-size:32px;
+    color:#f0c08b;
+    margin:10px 0;
+}
+
+.book-card p{
+    color:#d7ccc5;
     line-height:2;
-    color:#ddd;
 }
 
-.read-button{
+.book-button{
     display:inline-block;
     margin-top:15px;
-    padding:13px 30px;
-    border-radius:30px;
-    background:#a95d18;
+    padding:13px 35px;
+    background:#a9602a;
     color:white;
     text-decoration:none;
+    border-radius:30px;
     font-size:18px;
 }
 
-.reader{
-    width:92%;
-    max-width:800px;
-    margin:70px auto;
-    background:#fffaf3;
-    color:#29221d;
-    padding:30px;
-    border-radius:18px;
-    line-height:2.4;
+/* LINKS */
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
-.reader h2{
-    text-align:center;
-    color:#75452b;
-    font-size:32px;
-}
-
-.download{
+.link-button{
     display:block;
     text-align:center;
-    background:#75452b;
-    color:white;
-    padding:13px;
+    padding:15px;
     border-radius:30px;
     text-decoration:none;
-    margin:30px 0;
+    color:white;
+    background:#49352b;
+    border:1px solid #79553e;
+    font-size:18px;
 }
 
-.feedback{
-    width:92%;
-    max-width:650px;
-    margin:50px auto;
-    background:rgba(35,25,15,.8);
-    padding:25px;
-    border-radius:18px;
+.link-button:hover{
+    background:#6b4935;
 }
+
+/* FEEDBACK */
 
 .feedback input,
 .feedback textarea{
     width:100%;
-    padding:13px;
-    margin:7px 0;
+    padding:15px;
+    margin:8px 0;
     border:0;
-    border-radius:10px;
+    border-radius:12px;
+    font-family:inherit;
     font-size:16px;
+}
+
+.feedback textarea{
+    min-height:130px;
+    resize:vertical;
 }
 
 .feedback button{
-    background:#a95d18;
-    color:white;
+    margin-top:10px;
+    padding:13px 30px;
     border:0;
-    padding:12px 25px;
-    border-radius:25px;
-    font-size:16px;
+    border-radius:30px;
+    background:#a9602a;
+    color:white;
+    font-family:inherit;
+    font-size:17px;
 }
+
+/* BOOK PAGE */
+
+#book-page{
+    display:none;
+}
+
+.book-cover-space{
+    width:100%;
+    min-height:350px;
+    border-radius:18px;
+    border:1px solid #79553e;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#bfa99a;
+    margin-bottom:25px;
+}
+
+.book-description{
+    line-height:2.4;
+    font-size:18px;
+    color:#eee;
+}
+
+.read-button{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 35px;
+    border-radius:30px;
+    background:#a9602a;
+    color:white;
+    text-decoration:none;
+}
+
+.back-button{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    color:#dca978;
+    text-decoration:none;
+}
+
+/* FOOTER */
 
 footer{
     text-align:center;
-    padding:30px;
+    padding:45px 20px;
+    color:#aa9b91;
+    font-size:14px;
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<div class="header">
 
-    <div class="author">
-        Author • مسف خضر
+<!-- =========================
+     HOME PAGE
+========================= -->
+
+<div id="home-page">
+
+
+<header>
+
+    <!-- بعد میں یہاں آپ کا اصل Logo لگائیں گے -->
+
+    <div class="logo-space">
+        Logo
     </div>
 
-    <div class="collection">
-        Books Collection
+    <h1 class="author-name">
+        مسف خضر
+    </h1>
+
+    <div class="subtitle">
+        میری تحریری دنیا میں خوش آمدید
     </div>
 
-</div>
+</header>
 
 
-<div class="search">
+<!-- 1. AUTHOR INTRODUCTION -->
 
-    <input
-    type="text"
-    placeholder="Search a Book"
-    value="خاموش کرن">
+<section>
 
-    <button>Search</button>
-
-</div>
-
-
-<div class="book">
-
-    <!-- آپ کا cover بعد میں cover.jpg کے نام سے یہاں آئے گا -->
-
-    <img
-    src="cover.jpg"
-    class="cover"
-    alt="خاموش کرن">
-
-    <div class="book-content">
-
-        <h1 class="book-title">
-            خاموش کرن
-        </h1>
-
-        <p class="description">
-            ایک ایسی کہانی جس میں خاموشی بھی بہت کچھ کہتی ہے۔
-           یہ ایک خاندانی، جذباتی اور اصلاحی ناول ہے جس میں محبت سے زیادہ کردار، صبر، معافی اور انسان کے پیچھے رہ جانے والی اچھی تربیت مرکزی حیثیت رکھتی ہے۔
-        </p>
-
-        <a href="#reading" class="read-button">
-            Read More
-        </a>
-
-    </div>
-
-</div>
-
-
-<section id="reading" class="reader">
-
-    <h2>
-        خاموش کرن
+    <h2 class="section-title">
+        میرے بارے میں
     </h2>
 
-    <p style="text-align:center;">
-        تحریربرائے: مسف خضر
-    </p>
+    <div class="card">
 
-    <hr>
+        <div class="author-text">
 
-    <h2>
-        باب اول
-    </h2>
+            <p>
+            السلام علیکم!
+            </p>
 
-    <p>
-        یہاں آپ اپنے ناول کا پہلا باب لکھیں گی۔
-    </p>
+            <p>
+            میں <strong>مسف خضر</strong> ہوں۔
+            شاید ابھی آپ مجھے ایک مصنفہ کے طور پر نہیں جانتے،
+            اور سچ کہوں تو میں خود بھی ابھی اس لفظ کو اپنے لیے
+            مکمل طور پر اپنانے کے سفر میں ہوں۔
+            </p>
 
-    <p>
-        جب آپ کا ناول مکمل ہو جائے گا تو آپ یہاں
-        اپنے اصل chapters paste کر سکتی ہیں۔
-    </p>
+            <p>
+            میں نے لکھنا اس لیے شروع نہیں کیا کہ مجھے لگتا ہے
+            میں بہت اچھا لکھ سکتی ہوں، بلکہ اس لیے کہ میرے اندر
+            کچھ باتیں، کچھ احساسات اور کچھ کہانیاں ایسی ہیں
+            جنہیں میں لفظوں میں ڈھالنے کی کوشش کرنا چاہتی ہوں۔
+            </p>
 
-    <a
-    class="download"
-    href="khamoosh-kiran.pdf"
-    download>
-        📥 مکمل ناول Download کریں
-    </a>
+            <p>
+            یہ میری لکھنے کی دنیا میں ایک چھوٹی سی شروعات ہے۔
+            میں ابھی سیکھ رہی ہوں، کبھی لفظ ساتھ دیتے ہیں اور
+            کبھی نہیں، کبھی لکھی ہوئی بات دل کو خود بھی پسند آتی
+            ہے اور کبھی اسے دوبارہ لکھنے کو دل چاہتا ہے۔
+            لیکن شاید یہی تو اس سفر کی خوبصورتی ہے…
+            <strong>کوشش کرتے رہنا۔</strong>
+            </p>
+
+            <p>
+            میں نہیں جانتی میری تحریریں آپ کے دل تک کہاں تک
+            پہنچیں گی، مگر میں ہر لفظ دل سے لکھنے کی کوشش
+            ضرور کروں گی۔
+            </p>
+
+            <p>
+            اگر میری کسی کہانی کا کوئی کردار آپ کو اپنا سا لگے،
+            کوئی جملہ آپ کے دل میں ٹھہر جائے، یا میری لکھی ہوئی
+            کوئی بات آپ کو اپنے کسی احساس کی یاد دلا دے، تو
+            میرے لیے اس سے بڑی خوشی شاید کچھ نہیں ہوگی۔
+            </p>
+
+            <p>
+            یہ ویب سائٹ میرے لیے صرف اپنی تحریریں رکھنے کی جگہ
+            نہیں، بلکہ آپ سے ملنے کا ایک چھوٹا سا راستہ ہے۔
+            </p>
+
+            <p>
+            تو آئیے…
+            میری اس چھوٹی سی کوشش کا حصہ بنیے۔
+            شاید میرے الفاظ میں آپ کو اپنی کوئی خاموش سی
+            کہانی مل جائے۔ 🤍
+            </p>
+
+            <p>
+            — مسف خضر
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<div class="feedback">
+<!-- 2. BOOKS COLLECTION -->
 
-    <h2>
+<section>
+
+    <h2 class="section-title">
+        Books Collection
+    </h2>
+
+    <div class="card book-card">
+
+        <h3>
+            خاموش کرن
+        </h3>
+
+        <p>
+            میری پہلی ناول کی کوشش۔
+            ایک ایسی کہانی جس میں احساسات، رشتے
+            اور زندگی کے کچھ خاموش پہلو لفظوں میں
+            بیان کرنے کی کوشش کی گئی ہے۔
+        </p>
+
+        <a
+        href="#book"
+        class="book-button"
+        onclick="showBook()">
+
+            Read More
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- 3. LINKS -->
+
+<section>
+
+    <h2 class="section-title">
+        Links
+    </h2>
+
+    <div class="card links">
+
+        <a
+        href="https://whatsapp.com/channel/0029VbD6NF0H5JLrbb7wJP1C"
+        target="_blank"
+        class="link-button">
+
+            💬 WhatsApp Channel
+
+        </a>
+
+        <a
+        href="https://www.instagram.com/lafzo.nkajahan"
+        target="_blank"
+        class="link-button">
+
+            📷 Instagram
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- 4. FEEDBACK -->
+
+<section>
+
+    <h2 class="section-title">
         Readers Feedback
     </h2>
 
-    <p>
-        ناول پڑھنے کے بعد اپنی رائے ضرور دیں۔
-    </p>
+    <div class="card feedback">
 
-    <input
-    type="text"
-    placeholder="آپ کا نام">
+        <p>
+            میری تحریر پڑھ کر اپنی رائے میرے ساتھ ضرور شیئر کریں۔ 🤍
+        </p>
 
-    <textarea
-    rows="5"
-    placeholder="اپنی رائے لکھیں..."></textarea>
+        <input
+        type="text"
+        placeholder="آپ کا نام">
 
-    <button>
-        Feedback Send کریں
-    </button>
+        <textarea
+        placeholder="اپنی رائے یہاں لکھیں..."></textarea>
+
+        <button>
+            Feedback Send کریں
+        </button>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    © 2026 مسف خضر
+
+</footer>
 
 </div>
 
 
-<footer>
-    © 2026 مسف خضر — خاموش کرن
-</footer>
+<!-- =========================
+     KHAMOSH KIRAN PAGE
+========================= -->
+
+<div id="book-page">
+
+<section>
+
+    <div class="card">
+
+        <div class="book-cover-space">
+
+            🖼️ یہاں خاموش کرن کا Cover آئے گا
+
+        </div>
+
+        <h2 class="section-title">
+            خاموش کرن
+        </h2>
+
+        <div class="book-description">
+
+            <h3>
+                ناول کا تعارف
+            </h3>
+
+            <p>
+                یہاں آپ اپنے ناول کا اصل تعارف لکھیں گی۔
+            </p>
+
+
+            <h3>
+                پیش لفظ
+            </h3>
+
+            <p>
+                یہاں آپ اپنے ناول کا پیش لفظ لکھیں گی۔
+            </p>
+
+        </div>
+
+
+        <a
+        href="#reading"
+        class="read-button">
+
+            📖 Read More
+
+        </a>
+
+
+        <a
+        href="khamoosh-kiran.pdf"
+        download
+        class="read-button">
+
+            📥 Download Novel
+
+        </a>
+
+
+        <a
+        href="#"
+        onclick="showHome()"
+        class="back-button">
+
+            ← واپس Author Page پر جائیں
+
+        </a>
+
+    </div>
+
+</section>
+
+</div>
+
+
+<script>
+
+function showBook(){
+
+    document.getElementById("home-page").style.display="none";
+
+    document.getElementById("book-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function showHome(){
+
+    document.getElementById("book-page").style.display="none";
+
+    document.getElementById("home-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+</script>
+
 
 </body>
-  </html>
+
+</html>

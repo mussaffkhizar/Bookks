@@ -36,17 +36,20 @@ header{
     padding:55px 20px 35px;
 }
 
-.logo-space{
-    width:110px;
-    height:110px;
+.logo-box{
+    width:230px;
+    max-width:70%;
     margin:0 auto 25px;
-    border:2px solid #c88b50;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#c88b50;
-    font-size:14px;
+    background:#fff;
+    border-radius:22px;
+    padding:8px;
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.logo-box img{
+    width:100%;
+    height:auto;
+    display:block;
 }
 
 .author-name{
@@ -109,6 +112,15 @@ section{
 .book-card p{
     color:#d7ccc5;
     line-height:2;
+}
+
+.book-thumb{
+    width:170px;
+    max-width:60%;
+    height:auto;
+    border-radius:8px;
+    box-shadow:0 12px 30px rgba(0,0,0,.5);
+    margin-bottom:10px;
 }
 
 .book-button{
@@ -181,23 +193,39 @@ section{
     display:none;
 }
 
-.book-cover-space{
-    width:100%;
-    min-height:350px;
-    border-radius:18px;
-    border:1px solid #79553e;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.book-cover{
     text-align:center;
-    color:#bfa99a;
     margin-bottom:25px;
+}
+
+.book-cover img{
+    width:100%;
+    max-width:380px;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 18px 45px rgba(0,0,0,.55);
 }
 
 .book-description{
     line-height:2.4;
     font-size:18px;
     color:#eee;
+}
+
+.book-description h3{
+    color:#f0c08b;
+    text-align:center;
+    margin-top:30px;
+}
+
+.foreword p{
+    margin:0 0 14px;
+}
+
+.foreword .sign{
+    text-align:left;
+    color:#f0c08b;
+    margin-top:22px;
 }
 
 .read-button{
@@ -244,10 +272,8 @@ footer{
 
 <header>
 
-    <!-- بعد میں یہاں آپ کا اصل Logo لگائیں گے -->
-
-    <div class="logo-space">
-        Logo
+    <div class="logo-box">
+        <img src="logo.png" alt="Mussaff Khizar Logo">
     </div>
 
     <h1 class="author-name">
@@ -265,9 +291,7 @@ footer{
 
 <section>
 
-    <h2 class="section-title">
-        میرے بارے میں
-    </h2>
+   
 
     <div class="card">
 
@@ -346,6 +370,8 @@ footer{
 
     <div class="card book-card">
 
+        <img src="cover.jpg" alt="خاموش کرن" class="book-thumb">
+
         <h3>
             خاموش کرن
         </h3>
@@ -386,7 +412,7 @@ footer{
         target="_blank"
         class="link-button">
 
-            💬 WhatsApp Channel
+             WhatsApp Channel
 
         </a>
 
@@ -395,7 +421,7 @@ footer{
         target="_blank"
         class="link-button">
 
-            📷 Instagram
+             Instagram
 
         </a>
 
@@ -453,10 +479,8 @@ footer{
 
     <div class="card">
 
-        <div class="book-cover-space">
-
-            🖼️ یہاں خاموش کرن کا Cover آئے گا
-
+        <div class="book-cover">
+            <img src="cover.jpg" alt="خاموش کرن - کور">
         </div>
 
         <h2 class="section-title">
@@ -465,22 +489,44 @@ footer{
 
         <div class="book-description">
 
-            <h3>
-                ناول کا تعارف
-            </h3>
-
-            <p>
-                یہاں آپ اپنے ناول کا اصل تعارف لکھیں گی۔
-            </p>
+          
 
 
             <h3>
                 پیش لفظ
             </h3>
 
-            <p>
-                یہاں آپ اپنے ناول کا پیش لفظ لکھیں گی۔
-            </p>
+            <div class="foreword">
+
+                <p>
+                یہ صرف ایک ناول نہیں، بلکہ کچھ ایسے سوالوں، خاموشیوں اور رشتوں کا سفر ہے جن سے شاید ہم میں سے بہت سے لوگ کبھی نہ کبھی گزرے ہیں۔
+                </p>
+
+                <p>
+                زندگی میں کچھ زخم آواز نہیں کرتے، کچھ محبتیں لفظوں کی محتاج نہیں ہوتیں، اور کچھ لوگ ہمارے درمیان رہ کر بھی ہمیں یہ سکھا جاتے ہیں کہ اصل میراث دولت نہیں، کردار ہوتا ہے۔
+                </p>
+
+                <p>
+                خاموش کرن اسی احساس کی ایک چھوٹی سی کوشش ہے۔
+                </p>
+
+                <p>
+                اگر اس کہانی کا کوئی کردار آپ کو اپنے قریب محسوس ہو، کسی منظر میں آپ کو اپنی زندگی کی کوئی یاد مل جائے، یا کسی جملے کے بعد آپ چند لمحوں کے لیے رک کر سوچیں... تو میرے لیے یہی اس کتاب کی سب سے بڑی کامیابی ہوگی۔
+                </p>
+
+                <p>
+                میری دعا ہے کہ اس کہانی کے صفحات ختم ہونے کے بعد بھی اس کی ایک چھوٹی سی روشنی آپ کے دل میں باقی رہے۔
+                </p>
+
+                <p>
+                محبت، دعا اور امید کے ساتھ
+                </p>
+
+                <p class="sign">
+                مُسّف خضر
+                </p>
+
+            </div>
 
         </div>
 
@@ -489,7 +535,7 @@ footer{
         href="#reading"
         class="read-button">
 
-            📖 Read More
+             Read More
 
         </a>
 
@@ -499,7 +545,7 @@ footer{
         download
         class="read-button">
 
-            📥 Download Novel
+             Download Novel
 
         </a>
 

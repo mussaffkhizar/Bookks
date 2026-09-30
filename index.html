@@ -5,8 +5,7 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>مسف خضر | میری تحریری دنیا</title>
 
@@ -28,8 +27,6 @@ body{
     #211914;
     color:#fff;
 }
-
-/* HEADER */
 
 header{
     text-align:center;
@@ -64,8 +61,6 @@ header{
     font-size:18px;
 }
 
-/* GENERAL SECTIONS */
-
 section{
     width:92%;
     max-width:850px;
@@ -87,16 +82,12 @@ section{
     box-shadow:0 10px 35px rgba(0,0,0,.25);
 }
 
-/* AUTHOR */
-
 .author-text{
     font-size:18px;
     line-height:2.5;
     color:#eee;
     text-align:right;
 }
-
-/* BOOK COLLECTION */
 
 .book-card{
     text-align:center;
@@ -123,18 +114,17 @@ section{
     margin-bottom:10px;
 }
 
-.book-button{
+.book-button,
+.read-button{
     display:inline-block;
-    margin-top:15px;
-    padding:13px 35px;
+    margin-top:20px;
+    padding:14px 35px;
     background:#a9602a;
     color:white;
     text-decoration:none;
     border-radius:30px;
     font-size:18px;
 }
-
-/* LINKS */
 
 .links{
     display:flex;
@@ -157,8 +147,6 @@ section{
 .link-button:hover{
     background:#6b4935;
 }
-
-/* FEEDBACK */
 
 .feedback input,
 .feedback textarea{
@@ -187,9 +175,8 @@ section{
     font-size:17px;
 }
 
-/* BOOK PAGE */
-
-#book-page{
+#book-page,
+#reading-page{
     display:none;
 }
 
@@ -228,14 +215,27 @@ section{
     margin-top:22px;
 }
 
-.read-button{
-    display:inline-block;
-    margin-top:20px;
-    padding:14px 35px;
-    border-radius:30px;
-    background:#a9602a;
-    color:white;
-    text-decoration:none;
+.reader{
+    background:#fffaf3;
+    color:#29221d;
+    border-radius:18px;
+    padding:30px;
+    line-height:2.4;
+}
+
+.reader h2{
+    text-align:center;
+    color:#75452b;
+}
+
+.chapter{
+    margin-top:35px;
+}
+
+.chapter h3{
+    text-align:center;
+    color:#75452b;
+    font-size:28px;
 }
 
 .back-button{
@@ -245,8 +245,6 @@ section{
     color:#dca978;
     text-decoration:none;
 }
-
-/* FOOTER */
 
 footer{
     text-align:center;
@@ -290,8 +288,6 @@ footer{
 <!-- 1. AUTHOR INTRODUCTION -->
 
 <section>
-
-   
 
     <div class="card">
 
@@ -370,7 +366,10 @@ footer{
 
     <div class="card book-card">
 
-        <img src="cover.jpg" alt="خاموش کرن" class="book-thumb">
+        <img
+        src="cover.jpg"
+        alt="خاموش کرن"
+        class="book-thumb">
 
         <h3>
             خاموش کرن
@@ -388,7 +387,7 @@ footer{
         class="book-button"
         onclick="showBook()">
 
-            Read More
+            خاموش کرن دیکھیں
 
         </a>
 
@@ -412,7 +411,7 @@ footer{
         target="_blank"
         class="link-button">
 
-             WhatsApp Channel
+            WhatsApp Channel
 
         </a>
 
@@ -421,7 +420,7 @@ footer{
         target="_blank"
         class="link-button">
 
-             Instagram
+            Instagram
 
         </a>
 
@@ -451,7 +450,7 @@ footer{
         <textarea
         placeholder="اپنی رائے یہاں لکھیں..."></textarea>
 
-        <button>
+        <button type="button">
             Feedback Send کریں
         </button>
 
@@ -461,12 +460,11 @@ footer{
 
 
 <footer>
-
     © 2026 مسف خضر
-
 </footer>
 
 </div>
+
 
 
 <!-- =========================
@@ -480,16 +478,28 @@ footer{
     <div class="card">
 
         <div class="book-cover">
-            <img src="cover.jpg" alt="خاموش کرن - کور">
+
+            <img
+            src="cover.jpg"
+            alt="خاموش کرن - کور">
+
         </div>
+
 
         <h2 class="section-title">
             خاموش کرن
         </h2>
 
+
         <div class="book-description">
 
-          
+            <h3>
+                ناول کا تعارف
+            </h3>
+
+            <p>
+                یہاں آپ اپنے ناول کا اصل تعارف لکھ سکتی ہیں۔
+            </p>
 
 
             <h3>
@@ -499,11 +509,16 @@ footer{
             <div class="foreword">
 
                 <p>
-                یہ صرف ایک ناول نہیں، بلکہ کچھ ایسے سوالوں، خاموشیوں اور رشتوں کا سفر ہے جن سے شاید ہم میں سے بہت سے لوگ کبھی نہ کبھی گزرے ہیں۔
+                یہ صرف ایک ناول نہیں، بلکہ کچھ ایسے سوالوں،
+                خاموشیوں اور رشتوں کا سفر ہے جن سے شاید ہم
+                میں سے بہت سے لوگ کبھی نہ کبھی گزرے ہیں۔
                 </p>
 
                 <p>
-                زندگی میں کچھ زخم آواز نہیں کرتے، کچھ محبتیں لفظوں کی محتاج نہیں ہوتیں، اور کچھ لوگ ہمارے درمیان رہ کر بھی ہمیں یہ سکھا جاتے ہیں کہ اصل میراث دولت نہیں، کردار ہوتا ہے۔
+                زندگی میں کچھ زخم آواز نہیں کرتے، کچھ محبتیں
+                لفظوں کی محتاج نہیں ہوتیں، اور کچھ لوگ ہمارے
+                درمیان رہ کر بھی ہمیں یہ سکھا جاتے ہیں کہ اصل
+                میراث دولت نہیں، کردار ہوتا ہے۔
                 </p>
 
                 <p>
@@ -511,11 +526,17 @@ footer{
                 </p>
 
                 <p>
-                اگر اس کہانی کا کوئی کردار آپ کو اپنے قریب محسوس ہو، کسی منظر میں آپ کو اپنی زندگی کی کوئی یاد مل جائے، یا کسی جملے کے بعد آپ چند لمحوں کے لیے رک کر سوچیں... تو میرے لیے یہی اس کتاب کی سب سے بڑی کامیابی ہوگی۔
+                اگر اس کہانی کا کوئی کردار آپ کو اپنے قریب
+                محسوس ہو، کسی منظر میں آپ کو اپنی زندگی کی
+                کوئی یاد مل جائے، یا کسی جملے کے بعد آپ چند
+                لمحوں کے لیے رک کر سوچیں... تو میرے لیے یہی
+                اس کتاب کی سب سے بڑی کامیابی ہوگی۔
                 </p>
 
                 <p>
-                میری دعا ہے کہ اس کہانی کے صفحات ختم ہونے کے بعد بھی اس کی ایک چھوٹی سی روشنی آپ کے دل میں باقی رہے۔
+                میری دعا ہے کہ اس کہانی کے صفحات ختم ہونے کے
+                بعد بھی اس کی ایک چھوٹی سی روشنی آپ کے دل میں
+                باقی رہے۔
                 </p>
 
                 <p>
@@ -523,7 +544,7 @@ footer{
                 </p>
 
                 <p class="sign">
-                مُسّف خضر
+                مسف خضر
                 </p>
 
             </div>
@@ -533,9 +554,10 @@ footer{
 
         <a
         href="#reading"
-        class="read-button">
+        class="read-button"
+        onclick="showReading()">
 
-             Read More
+            📖 Read More
 
         </a>
 
@@ -545,7 +567,7 @@ footer{
         download
         class="read-button">
 
-             Download Novel
+            📥 Download Novel
 
         </a>
 
@@ -566,13 +588,88 @@ footer{
 </div>
 
 
+
+<!-- =========================
+     READING / CHAPTERS PAGE
+========================= -->
+
+<div id="reading-page">
+
+<section>
+
+    <div class="reader">
+
+        <h2>
+            خاموش کرن
+        </h2>
+
+        <p style="text-align:center;">
+            تحریر: مسف خضر
+        </p>
+
+        <hr>
+
+
+        <div class="chapter">
+
+            <h3>
+                باب اول
+            </h3>
+
+            <p>
+                یہاں آپ اپنے ناول کا پہلا باب لکھیں گی۔
+            </p>
+
+            <p>
+                جب ناول مکمل ہوگا تو آپ یہاں اپنے اصل
+                chapters paste کر سکتی ہیں۔
+            </p>
+
+        </div>
+
+
+        <!-- بعد میں باب دوم، باب سوم وغیرہ یہاں add ہوں گے -->
+
+
+        <a
+        href="#"
+        onclick="showBook()"
+        class="back-button">
+
+            ← خاموش کرن کے صفحے پر واپس جائیں
+
+        </a>
+
+    </div>
+
+</section>
+
+</div>
+
+
+
 <script>
 
 function showBook(){
 
     document.getElementById("home-page").style.display="none";
 
+    document.getElementById("reading-page").style.display="none";
+
     document.getElementById("book-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function showReading(){
+
+    document.getElementById("home-page").style.display="none";
+
+    document.getElementById("book-page").style.display="none";
+
+    document.getElementById("reading-page").style.display="block";
 
     window.scrollTo(0,0);
 
@@ -582,6 +679,8 @@ function showBook(){
 function showHome(){
 
     document.getElementById("book-page").style.display="none";
+
+    document.getElementById("reading-page").style.display="none";
 
     document.getElementById("home-page").style.display="block";
 

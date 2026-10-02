@@ -694,7 +694,63 @@ VERY SMALL MOBILE
 }
 
 }
+.chapters-list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    width:100%;
+    margin-top:25px;
+}
 
+.chapters-list .chapter-button{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:15px 18px;
+
+    background:linear-gradient(
+        135deg,
+        #a9602a,
+        #75401f
+    );
+
+    color:#fff !important;
+    text-decoration:none !important;
+
+    border:none;
+    border-radius:14px;
+
+    font-family:Georgia,
+        "Noto Nastaliq Urdu",
+        "Noto Naskh Arabic",
+        serif;
+
+    font-size:18px;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.25);
+    transition:all .25s ease;
+}
+
+.chapters-list .chapter-button:hover{
+    transform:translateY(-2px);
+
+    background:linear-gradient(
+        135deg,
+        #c17a3d,
+        #8d4e25
+    );
+
+    box-shadow:0 10px 22px rgba(0,0,0,.35);
+}
+
+@media(max-width:600px){
+
+    .chapters-list .chapter-button{
+        font-size:17px;
+        padding:14px 15px;
+    }
+
+}
 </style>  </head>  <body>  <!-- ==================================================    
 HOME PAGE    
 ================================================== -->  <div id="home-page">  <!-- =========================    
@@ -1096,10 +1152,99 @@ class="back-button">
 <div class="book-description">
 
 <p style="text-align:center;">
-
 اپنی پسند کا Chapter منتخب کریں اور کہانی پڑھیں۔ 🤍
-
 </p>
+
+</div>
+
+<div class="chapters-list">
+
+<a href="#" class="chapter-button"
+onclick="showChapter(1); return false;">
+Chapter # 1
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(2); return false;">
+Chapter # 2
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(3); return false;">
+Chapter # 3
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(4); return false;">
+Chapter # 4
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(5); return false;">
+Chapter # 5
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(6); return false;">
+Chapter # 6
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(7); return false;">
+Chapter # 7
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(8); return false;">
+Chapter # 8
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(9); return false;">
+Chapter # 9
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(10); return false;">
+Chapter # 10
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(11); return false;">
+Chapter # 11
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(12); return false;">
+Chapter # 12
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(13); return false;">
+Chapter # 13
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(14); return false;">
+Chapter # 14
+</a>
+
+<a href="#" class="chapter-button"
+onclick="showChapter(15); return false;">
+Chapter # 15
+</a>
+
+</div>
+
+<a href="#book"
+onclick="showBook(); return false;"
+class="back-button">
+← خاموش کرن کے صفحے پر واپس جائیں
+</a>
+
+</div>
+
+</section>
 
 </div>
 
@@ -1408,18 +1553,47 @@ window.scrollTo(0,0);
 SHOW EPISODES PAGE
 ========================= */
 
-function showEpisodes(){
+function showChapter(number){
 
-document.getElementById("home-page").style.display="none";  
+    document.getElementById("home-page").style.display="none";
 
-document.getElementById("book-page").style.display="none";  
+    document.getElementById("book-page").style.display="none";
 
-document.getElementById("reading-page").style.display="none";  
+    document.getElementById("chapters-page").style.display="none";
 
-document.getElementById("episodes-page").style.display="block";  
+    document.getElementById("reading-page").style.display="block";
 
-window.scrollTo(0,0);
 
+    document.getElementById("chapter-title").innerText =
+        "Chapter # " + number;
+
+
+    document.getElementById("chapter-message").innerText =
+        "Chapter # " + number +
+        " پڑھنے یا Download کرنے کے لیے نیچے button استعمال کریں۔";
+
+
+    document.getElementById("read-pdf-button").href =
+        "chapter-" + number + ".pdf";
+
+
+    document.getElementById("read-pdf-button").innerText =
+        " Read Chapter # " + number;
+
+
+    document.getElementById("download-pdf-button").href =
+        "chapter-" + number + ".pdf";
+
+
+    document.getElementById("download-pdf-button").download =
+        "chapter-" + number + ".pdf";
+
+
+    document.getElementById("download-pdf-button").innerText =
+        "⬇ Download Chapter # " + number;
+
+
+    window.scrollTo(0,0);
 }
 
 /* =========================

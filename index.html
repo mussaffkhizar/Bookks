@@ -1373,60 +1373,105 @@ onclick="showEpisodes()">
 
 </section>  </div>  <!-- ==================================================  
      JAVASCRIPT  
-================================================== -->  <script>  
-  
-  
-/* =========================  
-   SHOW BOOK PAGE  
-========================= */  
-  
-function showBook(){  
-  
-    document.getElementById("home-page").style.display="none";  
-  
-    document.getElementById("reading-page").style.display="none";  
-  
-    document.getElementById("book-page").style.display="block";  
-  
-    window.scrollTo(0,0);  
-  
-}  
-  
-  
-  
-/* =========================  
-   SHOW READING PAGE  
-========================= */  
-  
-function showReading(){  
-  
-    document.getElementById("home-page").style.display="none";  
-  
-    document.getElementById("book-page").style.display="none";  
-  
-    document.getElementById("reading-page").style.display="block";  
-  
-    window.scrollTo(0,0);  
-  
-}  
-  
-  
-  
-/* =========================  
-   SHOW HOME PAGE  
-========================= */  
-  
-function showHome(){  
-  
-    document.getElementById("book-page").style.display="none";  
-  
-    document.getElementById("reading-page").style.display="none";  
-  
-    document.getElementById("home-page").style.display="block";  
-  
-    window.scrollTo(0,0);  
-  
-}  
-  
-  
+================================================== -->   <script>
+
+/* =========================
+   SHOW BOOK PAGE
+========================= */
+
+function showBook(){
+
+    document.getElementById("home-page").style.display="none";
+
+    document.getElementById("reading-page").style.display="none";
+
+    document.getElementById("episodes-page").style.display="none";
+
+    document.getElementById("book-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW EPISODES PAGE
+========================= */
+
+function showEpisodes(){
+
+    document.getElementById("home-page").style.display="none";
+
+    document.getElementById("book-page").style.display="none";
+
+    document.getElementById("reading-page").style.display="none";
+
+    document.getElementById("episodes-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW EPISODE
+========================= */
+
+function showEpisode(number){
+
+    document.getElementById("home-page").style.display="none";
+
+    document.getElementById("book-page").style.display="none";
+
+    document.getElementById("episodes-page").style.display="none";
+
+    document.getElementById("reading-page").style.display="block";
+
+
+    document.getElementById("episode-title").innerText =
+        "Episode " + number;
+
+
+    document.getElementById("chapter-title").innerText =
+        "باب " + number;
+
+
+    document.getElementById("episode-content").innerHTML =
+        "<p>یہاں Episode " + number + " کا اصل ناول لکھیں گی۔</p>";
+
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   MORE EPISODES
+========================= */
+
+function showMoreEpisodes(){
+
+    document.getElementById("more-episodes").style.display="block";
+
+}
+
+
+/* =========================
+   SHOW HOME PAGE
+========================= */
+
+function showHome(){
+
+    document.getElementById("book-page").style.display="none";
+
+    document.getElementById("episodes-page").style.display="none";
+
+    document.getElementById("reading-page").style.display="none";
+
+    document.getElementById("home-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
 </script>  </body>  </html>

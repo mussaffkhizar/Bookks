@@ -1,1416 +1,1292 @@
-<!DOCTYPE html>
-<html lang="ur" dir="rtl">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#15100d">
-
-<title>مسف خضر | میری تحریری دنیا</title>
-
-<style>
-
-/* =========================
-   GENERAL
+<!DOCTYPE html>  <html lang="ur" dir="rtl">  <head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>مسف خضر | میری تحریری دنیا</title>  <style>    /* =========================
+GENERAL
 ========================= */
-
-*{
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    font-family:Georgia,"Noto Nastaliq Urdu","Noto Naskh Arabic",serif;
-    background:
-    radial-gradient(
-        circle at top,
-        rgba(102,70,38,.18),
-        transparent 38%
-    ),
-    linear-gradient(
-        135deg,
-        #120e0b,
-        #211914 48%,
-        #100c09
-    );
-    color:#fff;
-    min-height:100vh;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
+  
+  
+*{  
+    box-sizing:border-box;  
+}  
+  
+html{  
+    scroll-behavior:smooth;  
+}  
+  
+body{  
+  
+    margin:0;  
+  
+    font-family:  
+    Georgia,  
+    "Noto Nastaliq Urdu",  
+    serif;  
+  
+    background:  
+    linear-gradient(  
+        rgba(24,18,15,.88),  
+        rgba(24,18,15,.96)  
+    ),  
+    #211914;  
+  
+    color:#fff;  
+  
+}  
+  
+  
+/* =========================  
+   HEADER  
+========================= */  
+  
 header{
-    text-align:center;
-    padding:38px 15px 30px;
-}
 
-.logo-box{
-    width:520px;
-    max-width:94%;
-    margin:0 auto 22px;
-    background:#000;
-    border-radius:20px;
-    padding:7px;
-    border:1px solid rgba(230,180,100,.45);
-    box-shadow:0 18px 55px rgba(0,0,0,.55);
-}
+text-align:center;    
 
-.logo-box img{
+padding:55px 20px 35px;
+
+}
+  
+  
+/* LOGO */  
+  
+.main-logo{
+
     display:block;
-    width:100%;
-    height:auto;
-    border-radius:14px;
-}
 
-.author-name{
-    font-size:40px;
-    color:#f0c08b;
-    margin:0;
-}
+    width:200px;
 
-.subtitle{
-    margin-top:8px;
-    color:#d8c8bd;
-    font-size:18px;
-}
-
-
-/* =========================
-   SECTIONS
-========================= */
-
-section{
-    width:92%;
-    max-width:850px;
-    margin:32px auto;
-}
-
-.section-title{
-    text-align:center;
-    font-size:30px;
-    color:#e5ad72;
-    margin:0 0 22px;
-}
-
-
-/* =========================
-   CARDS
-========================= */
-
-.card{
-    background:
-    linear-gradient(
-        145deg,
-        rgba(53,39,31,.94),
-        rgba(35,26,21,.94)
-    );
-
-    border:1px solid rgba(210,160,110,.22);
-    border-radius:22px;
-    padding:30px;
-
-    box-shadow:
-    0 14px 42px rgba(0,0,0,.3);
-}
-
-
-/* =========================
-   AUTHOR
-========================= */
-
-.author-text{
-    font-size:18px;
-    line-height:2.45;
-    color:#eee;
-    text-align:right;
-}
-
-.author-text p{
-    margin:0 0 17px;
-}
-
-
-/* =========================
-   BOOK CARD
-========================= */
-
-.book-card{
-    text-align:center;
-    padding:35px 25px 32px;
-}
-
-.book-thumb{
-    width:300px;
-    max-width:82%;
-    height:auto;
-    display:block;
-    margin:0 auto 18px;
-    border-radius:12px;
-
-    box-shadow:
-    0 20px 48px rgba(0,0,0,.65);
-}
-
-.book-card h3{
-    font-size:32px;
-    color:#f0c08b;
-    margin:10px 0;
-}
-
-.book-card p{
-    color:#d7ccc5;
-    line-height:2;
-    font-size:17px;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-.book-button,
-.read-button,
-.chapter-button,
-.download-button{
-
-    display:inline-block;
-
-    margin:9px 4px 0;
-
-    padding:13px 28px;
-
-    background:
-    linear-gradient(
-        135deg,
-        #b66b32,
-        #8d4e25
-    );
-
-    color:#fff;
-
-    text-decoration:none;
-
-    border-radius:30px;
-
-    font-size:17px;
-
-    transition:.3s;
-
-    border:1px solid rgba(255,210,150,.25);
-
-    cursor:pointer;
-}
-
-.book-button:hover,
-.read-button:hover,
-.chapter-button:hover,
-.download-button:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:
-    0 10px 24px rgba(0,0,0,.38);
-}
-
-
-/* =========================
-   ORDER
-========================= */
-
-.order-box{
-    text-align:center;
-    padding:32px 22px;
-}
-
-.order-qr{
-    width:280px;
     max-width:90%;
+
     height:auto;
-    display:block;
-    margin:22px auto 8px;
 
-    background:#fff;
+    margin:0 auto 25px;
 
-    padding:8px;
-
-    border-radius:14px;
-
-    box-shadow:
-    0 15px 38px rgba(0,0,0,.5);
 }
-
-.order-text{
-    color:#e1d4cb;
-    font-size:18px;
-    line-height:2;
-}
-
-.order-note{
-    color:#bba99e;
-    font-size:15px;
-    margin-top:5px;
-}
-
-
-/* =========================
-   LINKS
-========================= */
-
-.links{
-    display:flex;
-    flex-direction:column;
-    gap:13px;
-}
-
-.link-button{
-
-    display:block;
-
-    text-align:center;
-
-    padding:14px;
-
-    border-radius:30px;
-
-    text-decoration:none;
-
-    color:#fff;
-
-    background:
-    linear-gradient(
-        135deg,
-        #4a362b,
-        #35261f
-    );
-
-    border:1px solid #79553e;
-
-    font-size:18px;
-
-    transition:.3s;
-}
-
-.link-button:hover{
-
-    background:#6b4935;
-
-    transform:translateY(-2px);
-}
-
-
-/* =========================
-   FEEDBACK
-========================= */
-
-.feedback p{
-    color:#e1d4cb;
-    line-height:2;
-}
-
-.feedback input,
-.feedback textarea{
-
-    width:100%;
-
-    padding:14px 15px;
-
-    margin:7px 0;
-
-    border:1px solid #d8c0ad;
-
-    border-radius:12px;
-
-    font-family:inherit;
-
-    font-size:16px;
-
-    background:#fffaf6;
-
-    color:#29221d;
-}
-
-.feedback textarea{
-
-    min-height:130px;
-
-    resize:vertical;
-}
-
-.feedback button{
-
-    margin-top:8px;
-
-    padding:13px 28px;
-
-    border:0;
-
-    border-radius:30px;
-
-    background:#a9602a;
-
-    color:#fff;
-
-    font-family:inherit;
-
-    font-size:17px;
-
-    cursor:pointer;
-}
-
-
-/* =========================
-   HIDDEN PAGES
-========================= */
-
+  
+/* AUTHOR NAME */  
+  
+.author-name{  
+  
+    font-size:38px;  
+  
+    color:#f0c08b;  
+  
+    margin:0;  
+  
+}  
+  
+  
+.subtitle{  
+  
+    margin-top:10px;  
+  
+    color:#d8c8bd;  
+  
+    font-size:18px;  
+  
+}  
+  
+  
+/* =========================  
+   SECTIONS  
+========================= */  
+  
+section{  
+  
+    width:92%;  
+  
+    max-width:850px;  
+  
+    margin:35px auto;  
+  
+}  
+  
+  
+.section-title{  
+  
+    text-align:center;  
+  
+    font-size:30px;  
+  
+    color:#e5ad72;  
+  
+    margin-bottom:25px;  
+  
+}  
+  
+  
+/* =========================  
+   CARD  
+========================= */  
+  
+.card{  
+  
+    background:  
+    rgba(48,35,28,.88);  
+  
+    border:  
+    1px solid rgba(210,160,110,.2);  
+  
+    border-radius:20px;  
+  
+    padding:30px;  
+  
+    box-shadow:  
+    0 10px 35px rgba(0,0,0,.25);  
+  
+}  
+  
+  
+/* =========================  
+   AUTHOR TEXT  
+========================= */  
+  
+.author-text{  
+  
+    font-size:18px;  
+  
+    line-height:2.5;  
+  
+    color:#eee;  
+  
+    text-align:right;  
+  
+}  
+  
+  
+/* =========================  
+   BOOK CARD  
+========================= */  
+  
+.book-card{  
+  
+    text-align:center;  
+  
+    padding:35px 25px;  
+  
+}  
+  
+  
+.book-card h3{  
+  
+    font-size:32px;  
+  
+    color:#f0c08b;  
+  
+    margin:18px 0 10px;  
+  
+}  
+  
+  
+.book-card p{  
+  
+    color:#d7ccc5;  
+  
+    line-height:2;  
+  
+}  
+  
+  
+/* BOOK THUMB */  
+  
+.book-thumb{  
+  
+    width:260px;  
+  
+    max-width:80%;  
+  
+    height:auto;  
+  
+    border-radius:10px;  
+  
+    box-shadow:  
+    0 18px 40px rgba(0,0,0,.6);  
+  
+    margin-bottom:10px;  
+  
+}  
+  
+  
+/* =========================  
+   BUTTONS  
+========================= */  
+  
+.book-button,  
+.read-button{  
+  
+    display:inline-block;  
+  
+    margin-top:20px;  
+  
+    padding:14px 35px;  
+  
+    background:  
+    linear-gradient(  
+        135deg,  
+        #b66b32,  
+        #8d4e25  
+    );  
+  
+    color:white;  
+  
+    text-decoration:none;  
+  
+    border-radius:30px;  
+  
+    font-size:18px;  
+  
+    transition:.3s;  
+  
+    border:  
+    1px solid rgba(255,210,150,.25);  
+  
+}  
+  
+  
+.book-button:hover,  
+.read-button:hover{  
+  
+    transform:translateY(-2px);  
+  
+    box-shadow:  
+    0 8px 20px rgba(0,0,0,.35);  
+  
+}  
+  
+  
+/* =========================  
+   LINKS  
+========================= */  
+  
+.links{  
+  
+    display:flex;  
+  
+    flex-direction:column;  
+  
+    gap:15px;  
+  
+}  
+  
+  
+.link-button{  
+  
+    display:block;  
+  
+    text-align:center;  
+  
+    padding:15px;  
+  
+    border-radius:30px;  
+  
+    text-decoration:none;  
+  
+    color:white;  
+  
+    background:#49352b;  
+  
+    border:  
+    1px solid #79553e;  
+  
+    font-size:18px;  
+  
+    transition:.3s;  
+  
+}  
+  
+  
+.link-button:hover{  
+  
+    background:#6b4935;  
+  
+    transform:translateY(-2px);  
+  
+}  
+  
+  
+/* =========================  
+   FEEDBACK  
+========================= */  
+  
+.feedback input,  
+.feedback textarea{  
+  
+    width:100%;  
+  
+    padding:15px;  
+  
+    margin:8px 0;  
+  
+    border:0;  
+  
+    border-radius:12px;  
+  
+    font-family:inherit;  
+  
+    font-size:16px;  
+  
+}  
+  
+  
+.feedback textarea{  
+  
+    min-height:130px;  
+  
+    resize:vertical;  
+  
+}  
+  
+  
+.feedback button{  
+  
+    margin-top:10px;  
+  
+    padding:13px 30px;  
+  
+    border:0;  
+  
+    border-radius:30px;  
+  
+    background:#a9602a;  
+  
+    color:white;  
+  
+    font-family:inherit;  
+  
+    font-size:17px;  
+  
+    cursor:pointer;  
+  
+}  
+  
+  
+/* =========================  
+   ORDER SECTION  
+========================= */  
+  
+.order-box{  
+  
+    text-align:center;  
+  
+    padding:35px 25px;  
+  
+}  
+  
+  
+.order-box h2{  
+  
+    margin-top:0;  
+  
+}  
+  
+  
+.order-qr{  
+  
+    width:250px;  
+  
+    max-width:85%;  
+  
+    height:auto;  
+  
+    display:block;  
+  
+    margin:20px auto;  
+  
+    background:white;  
+  
+    padding:10px;  
+  
+    border-radius:12px;  
+  
+    box-shadow:  
+    0 12px 35px rgba(0,0,0,.5);  
+  
+}  
+  
+  
+.order-text{  
+  
+    color:#e1d4cb;  
+  
+    font-size:18px;  
+  
+    line-height:2;  
+  
+}  
+  
+  
+.order-note{  
+  
+    color:#bba99e;  
+  
+    font-size:15px;  
+  
+    margin-top:10px;  
+  
+}  
+  
+  
+/* =========================  
+   HIDDEN PAGES  
+========================= */  
+  
 #book-page,
-#chapters-page,
+#episodes-page,
 #reading-page{
-
     display:none;
 }
-
-
-/* =========================
-   BOOK COVER
-========================= */
-
-.book-cover{
-
-    text-align:center;
-
-    margin-bottom:25px;
-}
-
-.book-cover img{
-
-    width:100%;
-
-    max-width:460px;
-
-    height:auto;
-
-    display:block;
-
-    margin:auto;
-
-    border-radius:14px;
-
-    box-shadow:
-    0 22px 55px rgba(0,0,0,.68);
-}
-
-
-/* =========================
-   BOOK DESCRIPTION
-========================= */
-
-.book-description{
-
-    line-height:2.4;
-
-    font-size:18px;
-
-    color:#eee;
-}
-
-.book-description h3{
-
-    color:#f0c08b;
-
-    text-align:center;
-
-    margin-top:28px;
-}
-
-.foreword p{
-
-    margin:0 0 14px;
-}
-
-.foreword .sign{
-
-    text-align:left;
-
-    color:#f0c08b;
-
-    margin-top:20px;
-}
-
-
-/* =========================
-   CHAPTERS
-========================= */
-
-.chapters-list{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:13px;
-
-    margin-top:25px;
-}
-
-.chapter-button{
-
-    display:block;
-
-    width:100%;
-
-    text-align:center;
-
-    margin:0;
-
-    padding:15px 20px;
-
-    background:
-    linear-gradient(
-        135deg,
-        #4a362b,
-        #35261f
-    );
-
-    border:1px solid #79553e;
-
-    font-size:19px;
-
-    border-radius:15px;
-}
-
-.chapter-button:hover{
-
-    background:
-    linear-gradient(
-        135deg,
-        #b66b32,
-        #8d4e25
-    );
-}
-
-
-/* =========================
-   CHAPTER CARD
-========================= */
-
-.chapter-card{
-
-    background:
-    linear-gradient(
-        145deg,
-        rgba(53,39,31,.96),
-        rgba(35,26,21,.96)
-    );
-
-    border:1px solid rgba(210,160,110,.22);
-
-    border-radius:18px;
-
-    padding:20px;
-
-    margin-bottom:18px;
-
-    text-align:center;
-}
-
-.chapter-card h3{
-
-    color:#f0c08b;
-
-    font-size:25px;
-
-    margin:0 0 12px;
-}
-
-.chapter-card p{
-
-    color:#d7ccc5;
-
-    line-height:1.9;
-
-    margin:0 0 10px;
-}
-
-
-/* =========================
-   READING PAGE
-========================= */
-
-.reader{
-
-    background:#fffaf3;
-
-    color:#29221d;
-
-    border-radius:18px;
-
-    padding:30px;
-
-    line-height:2.4;
-
-    box-shadow:
-    0 15px 45px rgba(0,0,0,.35);
-}
-
-.reader h2{
-
-    text-align:center;
-
-    color:#75452b;
-}
-
-.chapter{
-
-    margin-top:35px;
-}
-
-.chapter h3{
-
-    text-align:center;
-
-    color:#75452b;
-
-    font-size:28px;
-}
-
-.chapter p{
-
-    font-size:18px;
-}
-
-
-/* =========================
-   BACK BUTTON
-========================= */
-
-.back-button{
-
-    display:block;
-
-    text-align:center;
-
-    margin-top:24px;
-
-    color:#dca978;
-
-    text-decoration:none;
-
-    font-size:17px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-
-    text-align:center;
-
-    padding:40px 20px;
-
-    color:#aa9b91;
-
-    font-size:14px;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:600px){
-
-    header{
-        padding:25px 10px 22px;
-    }
-
-    .logo-box{
-
-        width:500px;
-
-        max-width:96%;
-
-        border-radius:16px;
-
-        padding:5px;
-    }
-
-    .logo-box img{
-        border-radius:11px;
-    }
-
-    .author-name{
-        font-size:32px;
-    }
-
-    .subtitle{
-        font-size:16px;
-    }
-
-    section{
-
-        width:94%;
-
-        margin:25px auto;
-    }
-
-    .card{
-
-        padding:22px 17px;
-    }
-
-    .section-title{
-
-        font-size:27px;
-    }
-
-    .author-text{
-
-        font-size:17px;
-
-        line-height:2.3;
-    }
-
-    .book-card h3{
-
-        font-size:28px;
-    }
-
-    .book-thumb{
-
-        width:255px;
-    }
-
-    .order-qr{
-
-        width:245px;
-    }
-
-    .book-description{
-
-        font-size:17px;
-
-        line-height:2.25;
-    }
-
-    .reader{
-
-        padding:22px 17px;
-    }
-
-    .book-button,
-    .read-button,
-    .download-button{
-
-        font-size:16px;
-
-        padding:12px 22px;
-    }
-
-    .chapter-button{
-
-        font-size:17px;
-
-        padding:14px 15px;
-    }
-
-}
-
-
-@media(max-width:380px){
-
-    .author-name{
-        font-size:28px;
-    }
-
-    .section-title{
-        font-size:24px;
-    }
-
-    .book-button,
-    .read-button,
-    .download-button{
-
-        padding:11px 19px;
-
-        font-size:15px;
-    }
-
-}
-
-
-/* =========================
-   CHAPTER DOWNLOAD AREA
-========================= */
-
-.chapter-actions{
-
-    margin-top:20px;
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:8px;
-}
-
-.download-button{
-
-    background:
-    linear-gradient(
-        135deg,
-        #8d4e25,
-        #63371d
-    );
-}
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<!-- ==================================================
-     HOME PAGE
+  
+  
+/* =========================  
+   BOOK PAGE  
+========================= */  
+  
+.book-cover{  
+  
+    text-align:center;  
+  
+    margin-bottom:30px;  
+  
+}  
+  
+  
+.book-cover img{  
+  
+    width:100%;  
+  
+    max-width:430px;  
+  
+    height:auto;  
+  
+    border-radius:12px;  
+  
+    box-shadow:  
+    0 20px 50px rgba(0,0,0,.65);  
+  
+}  
+  
+  
+/* =========================  
+   BOOK DESCRIPTION  
+========================= */  
+  
+.book-description{  
+  
+    line-height:2.4;  
+  
+    font-size:18px;  
+  
+    color:#eee;  
+  
+}  
+  
+  
+.book-description h3{  
+  
+    color:#f0c08b;  
+  
+    text-align:center;  
+  
+    margin-top:30px;  
+  
+}  
+  
+  
+.foreword p{  
+  
+    margin:0 0 14px;  
+  
+}  
+  
+  
+.foreword .sign{  
+  
+    text-align:left;  
+  
+    color:#f0c08b;  
+  
+    margin-top:22px;  
+  
+}  
+  
+  
+/* =========================  
+   READER  
+========================= */  
+  
+.reader{  
+  
+    background:#fffaf3;  
+  
+    color:#29221d;  
+  
+    border-radius:18px;  
+  
+    padding:30px;  
+  
+    line-height:2.4;  
+  
+}  
+  
+  
+.reader h2{  
+  
+    text-align:center;  
+  
+    color:#75452b;  
+  
+}  
+  
+  
+.chapter{  
+  
+    margin-top:35px;  
+  
+}  
+  
+  
+.chapter h3{  
+  
+    text-align:center;  
+  
+    color:#75452b;  
+  
+    font-size:28px;  
+  
+}  
+  
+  
+.chapter p{  
+  
+    font-size:18px;  
+  
+}  
+  
+  
+/* =========================  
+   BACK BUTTON  
+========================= */  
+  
+.back-button{  
+  
+    display:block;  
+  
+    text-align:center;  
+  
+    margin-top:25px;  
+  
+    color:#dca978;  
+  
+    text-decoration:none;  
+  
+    font-size:17px;  
+  
+}  
+  
+  
+/* =========================  
+   FOOTER  
+========================= */  
+  
+footer{  
+  
+    text-align:center;  
+  
+    padding:45px 20px;  
+  
+    color:#aa9b91;  
+  
+    font-size:14px;  
+  
+}  
+  
+  
+/* =========================  
+   MOBILE  
+========================= */  
+  
+@media(max-width:600px){  
+  
+    header{  
+  
+        padding:35px 15px 25px;  
+  
+    }  
+  
+  
+    .logo-box{  
+  
+        width:300px;  
+  
+        max-width:95%;  
+  
+    }  
+  
+  
+    .author-name{  
+  
+        font-size:32px;  
+  
+    }  
+  
+  
+    .subtitle{  
+  
+        font-size:16px;  
+  
+    }  
+  
+  
+    section{  
+  
+        width:94%;  
+  
+        margin:25px auto;  
+  
+    }  
+  
+  
+    .card{  
+  
+        padding:22px 18px;  
+  
+    }  
+  
+  
+    .section-title{  
+  
+        font-size:27px;  
+  
+    }  
+  
+  
+    .author-text{  
+  
+        font-size:17px;  
+  
+        line-height:2.35;  
+  
+    }  
+  
+  
+    .book-card h3{  
+  
+        font-size:28px;  
+  
+    }  
+  
+  
+    .book-thumb{  
+  
+        width:230px;  
+  
+    }  
+  
+  
+    .order-qr{  
+  
+        width:220px;  
+  
+    }  
+  
+  
+    .book-description{  
+  
+        font-size:17px;  
+  
+        line-height:2.25;  
+  
+    }  
+  
+  
+    .reader{  
+  
+        padding:22px 17px;  
+  
+    }  
+  
+}  
+  
+  
+/* =========================  
+   VERY SMALL MOBILE  
+========================= */  
+  
+@media(max-width:380px){  
+  
+    .author-name{  
+  
+        font-size:28px;  
+  
+    }  
+  
+  
+    .section-title{  
+  
+        font-size:24px;  
+  
+    }  
+  
+  
+    .book-button,  
+    .read-button{  
+  
+        padding:12px 25px;  
+  
+        font-size:16px;  
+  
+    }  
+  
+}  
+  
+</style>  </head>  <body>  <!-- ==================================================  
+     HOME PAGE  
+================================================== -->  <div id="home-page">  <!-- =========================  
+     HEADER  
+========================= -->  <header>  <img
+    src="logo.png"
+    alt="مسف خضر"
+    class="main-logo">
+
+
+
+
+<div class="subtitle">  
+
+    میری تحریری دنیا میں خوش آمدید  
+
+</div>
+
+</header>  <!-- ==================================================  
+     AUTHOR INTRODUCTION  
+================================================== -->  <section>  <div class="card">  
+
+    <div class="author-text">  
+
+
+        <p>  
+        السلام علیکم!  
+        </p>  
+
+
+        <p>  
+        میں <strong>مسف خضر</strong> ہوں۔  
+        شاید ابھی آپ مجھے ایک مصنفہ کے طور پر نہیں جانتے،  
+        اور سچ کہوں تو میں خود بھی ابھی اس لفظ کو اپنے لیے  
+        مکمل طور پر اپنانے کے سفر میں ہوں۔  
+        </p>  
+
+
+        <p>  
+        میں نے لکھنا اس لیے شروع نہیں کیا کہ مجھے لگتا ہے  
+        میں بہت اچھا لکھ سکتی ہوں، بلکہ اس لیے کہ میرے اندر  
+        کچھ باتیں، کچھ احساسات اور کچھ کہانیاں ایسی ہیں  
+        جنہیں میں لفظوں میں ڈھالنے کی کوشش کرنا چاہتی ہوں۔  
+        </p>  
+
+
+        <p>  
+        یہ میری لکھنے کی دنیا میں ایک چھوٹی سی شروعات ہے۔  
+        میں ابھی سیکھ رہی ہوں، کبھی لفظ ساتھ دیتے ہیں اور  
+        کبھی نہیں، کبھی لکھی ہوئی بات دل کو خود بھی پسند آتی  
+        ہے اور کبھی اسے دوبارہ لکھنے کو دل چاہتا ہے۔  
+        لیکن شاید یہی تو اس سفر کی خوبصورتی ہے…  
+        <strong>کوشش کرتے رہنا۔</strong>  
+        </p>  
+
+
+        <p>  
+        میں نہیں جانتی میری تحریریں آپ کے دل تک کہاں تک  
+        پہنچیں گی، مگر میں ہر لفظ دل سے لکھنے کی کوشش  
+        ضرور کروں گی۔  
+        </p>  
+
+
+        <p>  
+        اگر میری کسی کہانی کا کوئی کردار آپ کو اپنا سا لگے،  
+        کوئی جملہ آپ کے دل میں ٹھہر جائے، یا میری لکھی ہوئی  
+        کوئی بات آپ کو اپنے کسی احساس کی یاد دلا دے، تو  
+        میرے لیے اس سے بڑی خوشی شاید کچھ نہیں ہوگی۔  
+        </p>  
+
+
+        <p>  
+        یہ ویب سائٹ میرے لیے صرف اپنی تحریریں رکھنے کی جگہ  
+        نہیں، بلکہ آپ سے ملنے کا ایک چھوٹا سا راستہ ہے۔  
+        </p>  
+
+
+        <p>  
+        تو آئیے…  
+        میری اس چھوٹی سی کوشش کا حصہ بنیے۔  
+        شاید میرے الفاظ میں آپ کو اپنی کوئی خاموش سی  
+        کہانی مل جائے۔ 🤍  
+        </p>  
+
+
+        <p>  
+        — مسف خضر  
+        </p>  
+
+
+    </div>  
+
+</div>
+
+</section>  <!-- ==================================================  
+     BOOK COLLECTION  
+================================================== -->  <section>  <h2 class="section-title">  
+
+    Books Collection  
+
+</h2>  
+
+
+<div class="card book-card">  
+
+
+    <img  
+    src="cover.jpg"  
+    alt="خاموش کرن"  
+    class="book-thumb">  
+
+
+    <h3>  
+
+        خاموش کرن  
+
+    </h3>  
+
+
+    <p>  
+
+         میری پہلی کوشش۔  
+        ایک ایسی کہانی جس میں احساسات، رشتے  
+        اور زندگی کے کچھ خاموش پہلو لفظوں میں  
+        بیان کرنے کی کوشش کی گئی ہے۔  
+
+    </p>  
+
+
+    <a  
+    href="#book"  
+    class="book-button"  
+    onclick="showBook()">  
+
+        Read Khamosh Kiran 
+
+    </a>  
+
+
+</div>
+
+</section>  <!-- ==================================================  
+     ORDER BOOK  
+================================================== -->  <section>  <div class="card order-box">  
+
+
+    <h2 class="section-title">  
+
+        خاموش کرن — Order  
+
+    </h2>  
+
+
+    <p class="order-text">  
+
+        ناول کی اپنی کاپی حاصل کرنے کے لیے  
+        نیچے موجود QR Code scan کریں۔  
+
+    </p>  
+
+
+    <img  
+    src="scan-for-order-qr.png"  
+    alt="Scan for Order"  
+    class="order-qr">  
+
+
+    <p class="order-text">  
+
+        <strong>  
+        SCAN FOR ORDER  
+        </strong>  
+
+    </p>  
+
+
+    <p class="order-note">  
+
+        یا نیچے موجود بٹن پر click کرکے WhatsApp پر order کریں۔  
+
+    </p>  
+
+
+    <a  
+    href="https://wa.me/message/GE5436EW75OJD1"  
+    target="_blank"  
+    class="book-button">  
+
+         WhatsApp پر Order کریں  
+
+    </a>  
+
+
+</div>
+
+</section>  <!-- ==================================================  
+     LINKS  
+================================================== -->  <section>  <h2 class="section-title">  
+
+    Links  
+
+</h2>  
+
+
+<div class="card links">  
+
+
+    <a  
+    href="https://whatsapp.com/channel/0029VbD6NF0H5JLrbb7wJP1C"  
+    target="_blank"  
+    class="link-button">  
+
+        WhatsApp Channel  
+
+    </a>  
+
+
+    <a  
+    href="https://www.instagram.com/lafzo.nkajahan"  
+    target="_blank"  
+    class="link-button">  
+
+        Instagram  
+
+    </a>  
+
+
+   
+
+
+</div>
+
+</section>  
+    <!-- ==================================================
+     READERS FEEDBACK
 ================================================== -->
 
-<div id="home-page">
+<section>
 
+    <h2 class="section-title">
+        Readers Feedback
+    </h2>
 
-<header>
+    <div class="card feedback">
 
-    <div class="logo-box">
+        <p style="text-align:center; color:#e1d4cb; line-height:2;">
+            میری تحریر پڑھ کر اپنی رائے میرے ساتھ ضرور شیئر کریں۔ 🤍
+        </p>
 
-        <img
-            src="logo.png"
-            alt="Mussaff Khizar Logo"
-        >
+        <form
+        action="https://formsubmit.co/mussaffkhizar@gmail.com"
+        method="POST">
+
+            <!-- Email subject -->
+            <input
+            type="hidden"
+            name="_subject"
+            value="خاموش کرن — Readers Feedback">
+
+            <!-- Reply directly to reader -->
+            <input
+            type="email"
+            name="email"
+            placeholder="آپ کا Email"
+            required>
+
+            <!-- Reader Name -->
+            <input
+            type="text"
+            name="name"
+            placeholder="آپ کا نام"
+            required>
+
+            <!-- Feedback -->
+            <textarea
+            name="message"
+            placeholder="اپنی رائے یہاں لکھیں..."
+            required></textarea>
+
+            <button type="submit">
+                Feedback Send کریں 🤍
+            </button>
+
+        </form>
 
     </div>
 
-    <h1 class="author-name">
-        مسف خضر
-    </h1>
+</section>  <!-- ==================================================  
+     FOOTER  
+================================================== -->  <footer>  © 2026 مسف خضر
 
-    <div class="subtitle">
-        میری تحریری دنیا میں خوش آمدید
-    </div>
-
-</header>
+</footer>  </div>  <!-- ==================================================  
+     KHAMOSH KIRAN PAGE  
+================================================== -->  <div id="book-page">  <section>  <div class="card">  
 
 
-<!-- =========================
-     AUTHOR INTRO
-========================= -->
+    <!-- BOOK COVER -->  
+
+    <div class="book-cover">  
+
+
+        <img  
+        src="cover.jpg"  
+        alt="خاموش کرن - کور">  
+
+
+    </div>  
+
+
+
+    <!-- BOOK TITLE -->  
+
+    <h2 class="section-title">  
+
+        خاموش کرن  
+
+    </h2>  
+
+
+
+    <!-- BOOK DESCRIPTION -->  
+
+    <div class="book-description">  
+
+
+        <h3>  
+
+            پیش لفظ  
+
+        </h3>  
+
+
+        <div class="foreword">  
+
+
+            <p>  
+
+            یہ صرف ایک ناول نہیں، بلکہ کچھ ایسے سوالوں،  
+            خاموشیوں اور رشتوں کا سفر ہے جن سے شاید ہم  
+            میں سے بہت سے لوگ کبھی نہ کبھی گزرے ہیں۔  
+
+            </p>  
+
+
+            <p>  
+
+            زندگی میں کچھ زخم آواز نہیں کرتے، کچھ محبتیں  
+            لفظوں کی محتاج نہیں ہوتیں، اور کچھ لوگ ہمارے  
+            درمیان رہ کر بھی ہمیں یہ سکھا جاتے ہیں کہ اصل  
+            میراث دولت نہیں، کردار ہوتا ہے۔  
+
+            </p>  
+
+
+            <p>  
+
+            خاموش کرن اسی احساس کی ایک چھوٹی سی کوشش ہے۔  
+
+            </p>  
+
+
+            <p>  
+
+            اگر اس کہانی کا کوئی کردار آپ کو اپنے قریب  
+            محسوس ہو، کسی منظر میں آپ کو اپنی زندگی کی  
+            کوئی یاد مل جائے، یا کسی جملے کے بعد آپ چند  
+            لمحوں کے لیے رک کر سوچیں... تو میرے لیے یہی  
+            اس کتاب کی سب سے بڑی کامیابی ہوگی۔  
+
+            </p>  
+
+
+            <p>  
+
+            میری دعا ہے کہ اس کہانی کے صفحات ختم ہونے کے  
+            بعد بھی اس کی ایک چھوٹی سی روشنی آپ کے دل میں  
+            باقی رہے۔  
+
+            </p>  
+
+
+            <p>  
+
+            محبت، دعا اور امید کے ساتھ  
+
+            </p>  
+
+
+            <p class="sign">  
+
+            مسف خضر  
+
+            </p>  
+
+
+        </div>  
+
+
+    </div>  
+
+
+
+    <!-- READ MORE -->
+
+<a
+href="#episodes"
+class="read-button"
+onclick="showEpisodes()">
+
+    Read More
+
+</a>
+
+
+
+    <!-- ORDER -->  
+
+    <a  
+    href="https://wa.me/message/GE5436EW75OJD1"  
+    target="_blank"  
+    class="read-button">  
+
+         Order Book  
+
+    </a>  
+
+
+
+    <!-- BACK -->  
+
+    <a  
+    href="#"  
+    onclick="showHome()"  
+    class="back-button">  
+
+        ← واپس Author Page پر جائیں  
+
+    </a>  
+
+
+</div>
+
+</section>  </div> <!-- ==================================================
+     EPISODES PAGE
+================================================== -->
+
+<div id="episodes-page">
 
 <section>
 
 <div class="card">
 
-<div class="author-text">
-
-<p>
-السلام علیکم!
-</p>
-
-<p>
-میں <strong>مسف خضر</strong> ہوں۔
-شاید ابھی آپ مجھے ایک مصنفہ کے طور پر نہیں جانتے،
-اور سچ کہوں تو میں خود بھی ابھی اس لفظ کو اپنے لیے مکمل طور پر اپنانے کے سفر میں ہوں۔
-</p>
-
-<p>
-میں نے لکھنا اس لیے شروع نہیں کیا کہ مجھے لگتا ہے میں بہت اچھا لکھ سکتی ہوں،
-بلکہ اس لیے کہ میرے اندر کچھ باتیں، کچھ احساسات اور کچھ کہانیاں ایسی ہیں
-جنہیں میں لفظوں میں ڈھالنے کی کوشش کرنا چاہتی ہوں۔
-</p>
-
-<p>
-یہ میری لکھنے کی دنیا میں ایک چھوٹی سی شروعات ہے۔
-میں ابھی سیکھ رہی ہوں، کبھی لفظ ساتھ دیتے ہیں اور کبھی نہیں،
-کبھی لکھی ہوئی بات دل کو خود بھی پسند آتی ہے اور کبھی اسے دوبارہ لکھنے کو دل چاہتا ہے۔
-لیکن شاید یہی تو اس سفر کی خوبصورتی ہے…
-<strong>کوشش کرتے رہنا۔</strong>
-</p>
-
-<p>
-میں نہیں جانتی میری تحریریں آپ کے دل تک کہاں تک پہنچیں گی،
-مگر میں ہر لفظ دل سے لکھنے کی کوشش ضرور کروں گی۔
-</p>
-
-<p>
-اگر میری کسی کہانی کا کوئی کردار آپ کو اپنا سا لگے،
-کوئی جملہ آپ کے دل میں ٹھہر جائے،
-یا میری لکھی ہوئی کوئی بات آپ کو اپنے کسی احساس کی یاد دلا دے،
-تو میرے لیے اس سے بڑی خوشی شاید کچھ نہیں ہوگی۔
-</p>
-
-<p>
-یہ ویب سائٹ میرے لیے صرف اپنی تحریریں رکھنے کی جگہ نہیں،
-بلکہ آپ سے ملنے کا ایک چھوٹا سا راستہ ہے۔
-</p>
-
-<p>
-تو آئیے…
-میری اس تحریری دنیا میں خوش آمدید۔
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- ==================================================
-     BOOK
-================================================== -->
-
-<section>
-
-<div class="card book-card">
-
-    <img
-        src="cover.jpg"
-        alt="خاموش کرن"
-        class="book-thumb"
-    >
-
-    <h3>
+    <h2 class="section-title">
         خاموش کرن
-    </h3>
+    </h2>
 
-    <p>
-        میری پہلی ناول کی کوشش۔
-        ایک ایسی کہانی جس میں احساسات، رشتے اور زندگی
-        کے کچھ خاموش پہلو لفظوں میں بیان کرنے کی کوشش کی گئی ہے۔
-    </p>
+    <div class="book-description">
+
+        <p style="text-align:center;">
+            اپنی پسند کا Episode منتخب کریں اور کہانی پڑھیں۔ 🤍
+        </p>
+
+    </div>
+
+
+    <!-- EPISODES -->
+
+    <div style="text-align:center; margin-top:30px;">
+
+        <a
+        href="#episode1"
+        class="read-button"
+        onclick="showEpisode(1)">
+            Episode 1
+        </a>
+
+
+        <a
+        href="#episode2"
+        class="read-button"
+        onclick="showEpisode(2)">
+            Episode 2
+        </a>
+
+
+        <a
+        href="#episode3"
+        class="read-button"
+        onclick="showEpisode(3)">
+            Episode 3
+        </a>
+
+
+        <!-- MORE BUTTON -->
+
+        <div id="more-episodes" style="display:none;">
+
+            <a
+            href="#episode4"
+            class="read-button"
+            onclick="showEpisode(4)">
+                Episode 4
+            </a>
+
+            <a
+            href="#episode5"
+            class="read-button"
+            onclick="showEpisode(5)">
+                Episode 5
+            </a>
+
+            <a
+            href="#episode6"
+            class="read-button"
+            onclick="showEpisode(6)">
+                Episode 6
+            </a>
+
+        </div>
+
+
+        <br>
+
+        <button
+        onclick="showMoreEpisodes()"
+        class="read-button"
+        type="button">
+
+            More +
+
+        </button>
+
+    </div>
+
+
+    <!-- BACK -->
 
     <a
-        href="#book"
-        class="book-button"
-        onclick="showBook()"
-    >
-        خاموش کرن دیکھیں
+    href="#book"
+    onclick="showBook()"
+    class="back-button">
+
+
     </a>
 
 </div>
 
 </section>
 
-
-
-<!-- ==================================================
-     ORDER
-================================================== -->
-
-<section>
-
-<div class="card order-box">
-
-<h2 class="section-title">
-خاموش کرن — Order
-</h2>
-
-<p class="order-text">
-ناول کی اپنی کاپی حاصل کرنے کے لیے
-نیچے موجود QR Code scan کریں۔
-</p>
-
-<img
-    src="scan-for-order-qr.png"
-    alt="Scan for Order"
-    class="order-qr"
->
-
-<p class="order-note">
-یا نیچے WhatsApp کے ذریعے رابطہ کریں۔
-</p>
-
-<a
-    href="https://wa.me/message/GE5436EW75OJD1"
-    target="_blank"
-    rel="noopener"
-    class="read-button"
->
-    WhatsApp پر Order کریں
-</a>
-
-</div>
-
-</section>
-
-
-
-<!-- ==================================================
-     LINKS
-================================================== -->
-
-<section>
-
-<div class="card">
-
-<h2 class="section-title">
-Connect With Me
-</h2>
-
-<div class="links">
-
-<a
-    href="https://whatsapp.com/channel/0029VbD6NF0H5JLrbb7wJP1C"
-    target="_blank"
-    rel="noopener"
-    class="link-button"
->
-    WhatsApp Channel
-</a>
-
-
-<a
-    href="https://www.instagram.com/lafzo.nkajahan"
-    target="_blank"
-    rel="noopener"
-    class="link-button"
->
-    Instagram
-</a>
-
-
-<a
-    href="https://wa.me/message/GE5436EW75OJD1"
-    target="_blank"
-    rel="noopener"
-    class="link-button"
->
-    WhatsApp — Order Book
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- ==================================================
-     FEEDBACK
-================================================== -->
-
-<section>
-
-<div class="card feedback">
-
-<h2 class="section-title">
-🤍 Readers Feedback
-</h2>
-
-<p style="text-align:center;">
-How was your reading experience?
-</p>
-
-<form
-    action="https://formsubmit.co/mussaffkhizar@gmail.com"
-    method="POST"
->
-
-<input
-    type="hidden"
-    name="_subject"
-    value="New Reader Feedback — Mussaff Khizar"
->
-
-<input
-    type="hidden"
-    name="_captcha"
-    value="false"
->
-
-<input
-    type="text"
-    name="name"
-    placeholder="آپ کا نام"
-    required
->
-
-<textarea
-    name="message"
-    placeholder="اپنا feedback یہاں لکھیں..."
-    required
-></textarea>
-
-<div style="text-align:center;">
-
-<button type="submit">
-Send Feedback
-</button>
-
-</div>
-
-</form>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-© 2026 مسف خضر — میری تحریری دنیا
-
-</footer>
-
-</div>
-
-
-
-<!-- ==================================================
-     BOOK PAGE
-================================================== -->
-
-<div id="book-page">
-
-<section>
-
-<div class="card">
-
-<div class="book-cover">
-
-<img
-    src="cover.jpg"
-    alt="خاموش کرن"
->
-
-</div>
-
-
-<h2 class="section-title">
-خاموش کرن
-</h2>
-
-
-<div class="book-description">
-
-<h3>
-ناول کا تعارف
-</h3>
-
-<p>
-یہاں آپ اپنے ناول کا اصل تعارف لکھ سکتی ہیں۔
-</p>
-
-
-<h3>
-پیش لفظ
-</h3>
-
-<div class="foreword">
-
-<p>
-یہ صرف ایک ناول نہیں، بلکہ کچھ ایسے سوالوں،
-خاموشیوں اور رشتوں کا سفر ہے جن سے شاید ہم میں سے
-بہت سے لوگ کبھی نہ کبھی گزرے ہیں۔
-</p>
-
-<p>
-زندگی میں کچھ زخم آواز نہیں کرتے،
-کچھ محبتیں لفظوں کی محتاج نہیں ہوتیں،
-اور کچھ لوگ ہمارے درمیان رہ کر بھی ہمیں یہ سکھا جاتے ہیں
-کہ اصل میراث دولت نہیں، کردار ہوتا ہے۔
-</p>
-
-<p>
-خاموش کرن اسی احساس کی ایک چھوٹی سی کوشش ہے۔
-</p>
-
-<p>
-اگر اس کہانی کا کوئی کردار آپ کو اپنے قریب محسوس ہو،
-کسی منظر میں آپ کو اپنی زندگی کی کوئی یاد مل جائے،
-یا کسی جملے کے بعد آپ چند لمحوں کے لیے رک کر سوچیں...
-تو میرے لیے یہی اس کتاب کی سب سے بڑی کامیابی ہوگی۔
-</p>
-
-<p>
-میری دعا ہے کہ اس کہانی کے صفحات ختم ہونے کے بعد بھی
-اس کی ایک چھوٹی سی روشنی آپ کے دل میں باقی رہے۔
-</p>
-
-<p>
-محبت، دعا اور امید کے ساتھ
-</p>
-
-<p class="sign">
-مسف خضر
-</p>
-
-</div>
-
-</div>
-
-
-<a
-    href="#chapters"
-    class="read-button"
-    onclick="showChapters()"
->
-📖 Chapters پڑھیں
-</a>
-
-
-<a
-    href="https://wa.me/message/GE5436EW75OJD1"
-    target="_blank"
-    rel="noopener"
-    class="read-button"
->
-📖 Order Book
-</a>
-
-
-<a
-    href="#"
-    onclick="showHome()"
-    class="back-button"
->
-← واپس Author Page پر جائیں
-</a>
-
-</div>
-
-</section>
-
-</div>
-
-
-
-<!-- ==================================================
-     CHAPTERS PAGE
-================================================== -->
-
-<div id="chapters-page">
-
-<section>
-
-<div class="card">
-
-<h2 class="section-title">
-خاموش کرن
-</h2>
-
-<div class="book-description">
-
-<p style="text-align:center;">
-
-اپنی پسند کا Chapter منتخب کریں اور کہانی پڑھیں۔ 🤍
-
-</p>
-
-</div>
-
-
-<div class="chapters-list">
-
-
-<!-- CHAPTER 1 -->
-
-<a
-    href="chapter-1.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 1
-</a>
-
-
-<!-- CHAPTER 2 -->
-
-<a
-    href="chapter-2.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 2
-</a>
-
-
-<!-- CHAPTER 3 -->
-
-<a
-    href="chapter-3.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 3
-</a>
-
-
-<!-- CHAPTER 4 -->
-
-<a
-    href="chapter-4.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 4
-</a>
-
-
-<!-- CHAPTER 5 -->
-
-<a
-    href="chapter-5.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 5
-</a>
-
-
-<!-- CHAPTER 6 -->
-
-<a
-    href="chapter-6.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 6
-</a>
-
-
-<!-- CHAPTER 7 -->
-
-<a
-    href="chapter-7.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 7
-</a>
-
-
-<!-- CHAPTER 8 -->
-
-<a
-    href="chapter-8.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 8
-</a>
-
-
-<!-- CHAPTER 9 -->
-
-<a
-    href="chapter-9.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 9
-</a>
-
-
-<!-- CHAPTER 10 -->
-
-<a
-    href="chapter-10.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 10
-</a>
-
-
-<!-- CHAPTER 11 -->
-
-<a
-    href="chapter-11.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 11
-</a>
-
-
-<!-- CHAPTER 12 -->
-
-<a
-    href="chapter-12.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 12
-</a>
-
-
-<!-- CHAPTER 13 -->
-
-<a
-    href="chapter-13.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 13
-</a>
-
-
-<!-- CHAPTER 14 -->
-
-<a
-    href="chapter-14.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 14
-</a>
-
-
-<!-- CHAPTER 15 -->
-
-<a
-    href="chapter-15.pdf"
-    target="_blank"
-    class="chapter-button"
->
-Chapter # 15
-</a>
-
-
-</div>
-
-
-<a
-    href="#book"
-    onclick="showBook()"
-    class="back-button"
->
-← خاموش کرن کے صفحے پر واپس جائیں
-</a>
-
-</div>
-
-</section>
-
-</div>
-
-
-
-<!-- ==================================================
+</div> <!-- ==================================================
      READING PAGE
 ================================================== -->
 
@@ -1420,68 +1296,53 @@ Chapter # 15
 
 <div class="reader">
 
-<h2>
-خاموش کرن
-</h2>
+    <h2>
+        خاموش کرن
+    </h2>
 
-<p style="text-align:center;">
-تحریر: مسف خضر
-</p>
+    <p
+    id="episode-title"
+    style="text-align:center;">
+    </p>
 
-<hr>
-
-
-<div class="chapter">
-
-<h3 id="chapter-title">
-Chapter # 1
-</h3>
+    <hr>
 
 
-<p
-    id="chapter-message"
-    style="text-align:center;"
->
-Chapter منتخب کریں۔
-</p>
+    <!-- EPISODE CONTENT -->
+
+    <div class="chapter">
+
+        <h3 id="chapter-title">
+            باب اول
+        </h3>
 
 
-<div
-    class="chapter-actions"
->
+        <div id="episode-content">
 
-<a
-    id="read-pdf-button"
-    href="chapter-1.pdf"
-    target="_blank"
-    class="read-button"
->
-📖 Read Chapter # 1
-</a>
+            <p>
+                یہاں Episode 1 کا اصل ناول لکھیں۔
+            </p>
 
+            <p>
+                جب آپ اپنا Episode لکھیں گی،
+                تو اسی جگہ اس کا پورا متن paste کریں گی۔
+            </p>
 
-<a
-    id="download-pdf-button"
-    href="chapter-1.pdf"
-    download
-    class="download-button"
->
-⬇ Download Chapter # 1
-</a>
+        </div>
 
-</div>
-
-</div>
+    </div>
 
 
-<a
-    href="#chapters"
-    onclick="showChapters()"
-    class="back-button"
->
-← Chapters پر واپس جائیں
-</a>
+    <!-- BACK -->
 
+    <a
+    href="#episodes"
+    onclick="showEpisodes()"
+    class="back-button">
+
+        ← Episodes پر واپس جائیں
+
+    </a>
 
 </div>
 
@@ -1490,138 +1351,25 @@ Chapter منتخب کریں۔
 </div>
 
 
+    <!--  
+    ==================================================  
+    بعد میں یہاں باب دوم، باب سوم وغیرہ add کریں  
+    ==================================================  
+    -->  
 
-<!-- ==================================================
-     JAVASCRIPT
-================================================== -->
 
-<script>
+    <a  
+    href="#"  
+    onclick="showBook()"  
+    class="back-button">  
 
+        ← خاموش کرن کے صفحے پر واپس جائیں  
 
-/* =========================
-   SHOW BOOK
-========================= */
+    </a>  
 
-function showBook(){
 
-    document.getElementById("home-page").style.display="none";
+</div>
 
-    document.getElementById("chapters-page").style.display="none";
-
-    document.getElementById("reading-page").style.display="none";
-
-    document.getElementById("book-page").style.display="block";
-
-    window.scrollTo(0,0);
-}
-
-
-
-/* =========================
-   SHOW CHAPTERS
-========================= */
-
-function showChapters(){
-
-    document.getElementById("home-page").style.display="none";
-
-    document.getElementById("book-page").style.display="none";
-
-    document.getElementById("reading-page").style.display="none";
-
-    document.getElementById("chapters-page").style.display="block";
-
-    window.scrollTo(0,0);
-}
-
-
-
-/* =========================
-   SHOW CHAPTER
-========================= */
-
-function showChapter(number){
-
-    document.getElementById("home-page").style.display="none";
-
-    document.getElementById("book-page").style.display="none";
-
-    document.getElementById("chapters-page").style.display="none";
-
-    document.getElementById("reading-page").style.display="block";
-
-
-    document.getElementById("chapter-title").innerText =
-        "Chapter # " + number;
-
-
-    document.getElementById("chapter-message").innerText =
-        "Chapter # " + number + " پڑھنے یا download کرنے کے لیے نیچے button استعمال کریں۔";
-
-
-    document.getElementById("read-pdf-button").href =
-        "chapter-" + number + ".pdf";
-
-
-    document.getElementById("read-pdf-button").innerText =
-        "📖 Read Chapter # " + number;
-
-
-    document.getElementById("download-pdf-button").href =
-        "chapter-" + number + ".pdf";
-
-
-    document.getElementById("download-pdf-button").download =
-        "chapter-" + number + ".pdf";
-
-
-    document.getElementById("download-pdf-button").innerText =
-        "⬇ Download Chapter # " + number;
-
-
-    window.scrollTo(0,0);
-}
-
-
-
-/* =========================
-   SHOW HOME
-========================= */
-
-function showHome(){
-
-    document.getElementById("book-page").style.display="none";
-
-    document.getElementById("chapters-page").style.display="none";
-
-    document.getElementById("reading-page").style.display="none";
-
-    document.getElementById("home-page").style.display="block";
-
-    window.scrollTo(0,0);
-}
-
-
-/* =========================
-   CHAPTER BUTTONS
-========================= */
-
-document.querySelectorAll(".chapter-button").forEach(function(button, index){
-
-    button.addEventListener("click", function(event){
-
-        event.preventDefault();
-
-        showChapter(index + 1);
-
-    });
-
-});
-
-
-</script>
-
-
-</body>
-
-</html>
+</section>  </div>  <!-- ==================================================  
+     JAVASCRIPT  
+===

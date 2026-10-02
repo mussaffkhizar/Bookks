@@ -441,7 +441,8 @@ HIDDEN PAGES
 ========================= */
 
 #book-page,
-#chapters-page{
+#chapters-page,
+#chapter1-page{
 
     display:none;
 
@@ -649,77 +650,150 @@ CHAPTERS PAGE
 }
 
 
-.chapter-paper{
-    background:#fffaf3;
-    color:#29221d;
-    border:2px solid #b88954;
-    border-radius:10px;
-    padding:35px 42px 40px;
-    box-shadow:0 20px 55px rgba(0,0,0,.65);
+/* =========================
+CHAPTER 1 READING PAGE
+========================= */
+
+.chapter-reading{
+
+    width:92%;
+
+    max-width:700px;
+
+    margin:35px auto;
+
 }
+
+
+.chapter-paper{
+
+    background:#fffaf3;
+
+    color:#29221d;
+
+    border:2px solid #b88954;
+
+    border-radius:10px;
+
+    padding:35px 42px 40px;
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.65);
+
+}
+
 
 .chapter-label{
+
     text-align:center;
+
     color:#9a6338;
+
     font-size:18px;
+
     margin-bottom:8px;
+
 }
+
 
 .chapter-reading-title{
+
     text-align:center;
+
     color:#7b4728;
+
     font-size:34px;
+
     margin:0 0 25px;
+
 }
 
+
 .chapter-reading-text{
+
     direction:rtl;
+
     text-align:right;
-    white-space:pre-wrap;
+
     font-family:
         "Noto Nastaliq Urdu",
         "Noto Naskh Arabic",
         Georgia,
         serif;
+
     font-size:18px;
+
     line-height:2.35;
+
 }
+
 
 .chapter-reading-text p{
+
     margin:0 0 18px;
+
 }
 
+
 .chapter-reading .back-button{
+
     display:block;
+
     width:max-content;
+
     margin:35px auto 0;
+
     padding:12px 25px;
-    background:linear-gradient(135deg,#b66b32,#8d4e25);
+
+    background:
+        linear-gradient(
+            135deg,
+            #b66b32,
+            #8d4e25
+        );
+
     color:white;
+
     border-radius:28px;
+
     text-decoration:none;
+
 }
+
 
 @media(max-width:600px){
 
     .chapter-reading{
+
         width:94%;
+
     }
+
 
     .chapter-paper{
+
         padding:25px 19px 30px;
+
     }
+
 
     .chapter-reading-title{
+
         font-size:29px;
+
     }
 
+
     .chapter-reading-text{
+
         font-size:17px;
+
         line-height:2.25;
+
     }
 
 }
+
 
 /* =========================
 BACK BUTTON
@@ -1374,8 +1448,8 @@ Chapter # 1
 <div class="chapter-buttons">
 
 <a
-    href="chapter-1.pdf"
-    target="_blank"
+    href="#chapter1"
+    onclick="showChapter1(); return false;"
     class="chapter-button chapter-read"
 >
 📖 Read
@@ -1850,6 +1924,62 @@ Chapter # 15
 
 
 <!-- ==================================================
+CHAPTER 1 READING PAGE
+================================================== -->
+
+<div id="chapter1-page">
+
+<section class="chapter-reading">
+
+<div class="chapter-paper">
+
+<div class="chapter-label">
+Chapter # 1
+</div>
+
+<h1 class="chapter-reading-title">
+بے آواز زخم
+</h1>
+
+
+<div class="chapter-reading-text">
+
+<!-- ==================================================
+CHAPTER #1 TEXT
+یہاں اپنا پورا Chapter #1 کا متن paste کریں۔
+================================================== -->
+
+<p>
+یہاں آپ کے Chapter #1 کا مکمل متن آئے گا۔
+</p>
+
+
+<!--
+آپ اوپر والے paragraph کو delete کرکے
+اپنا Chapter #1 کا پورا متن یہاں paste کریں۔
+-->
+
+
+</div>
+
+
+<a
+    href="#chapters"
+    onclick="showChapters(); return false;"
+    class="back-button"
+>
+← Back to Chapters
+</a>
+
+</div>
+
+</section>
+
+</div>
+
+
+
+<!-- ==================================================
 JAVASCRIPT
 ================================================== -->
 
@@ -1865,6 +1995,8 @@ function showBook(){
     document.getElementById("home-page").style.display="none";
 
     document.getElementById("chapters-page").style.display="none";
+
+    document.getElementById("chapter1-page").style.display="none";
 
     document.getElementById("book-page").style.display="block";
 
@@ -1883,11 +2015,33 @@ function showChapters(){
 
     document.getElementById("book-page").style.display="none";
 
+    document.getElementById("chapter1-page").style.display="none";
+
     document.getElementById("chapters-page").style.display="block";
 
     window.scrollTo(0,0);
 
 }
+
+
+/* =========================
+SHOW CHAPTER 1
+========================= */
+
+function showChapter1(){
+
+    document.getElementById("home-page").style.display="none";
+
+    document.getElementById("book-page").style.display="none";
+
+    document.getElementById("chapters-page").style.display="none";
+
+    document.getElementById("chapter1-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
 
 /* =========================
 SHOW HOME PAGE
@@ -1898,6 +2052,8 @@ function showHome(){
     document.getElementById("book-page").style.display="none";
 
     document.getElementById("chapters-page").style.display="none";
+
+    document.getElementById("chapter1-page").style.display="none";
 
     document.getElementById("home-page").style.display="block";
 

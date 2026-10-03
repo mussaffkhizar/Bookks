@@ -2946,11 +2946,30 @@ Chapter # 2
 
 </div>
 
+
 <!-- ==================================================
 JAVASCRIPT
 ================================================== -->
 
 <script>
+
+/* =========================
+HIDE ALL PAGES
+========================= */
+
+function hideAllPages(){
+
+    document.getElementById("home-page").style.display="none";
+
+    document.getElementById("book-page").style.display="none";
+
+    document.getElementById("chapters-page").style.display="none";
+
+    document.getElementById("chapter1-page").style.display="none";
+
+    document.getElementById("chapter2-page").style.display="none";
+
+}
 
 
 /* =========================
@@ -2959,11 +2978,7 @@ SHOW BOOK PAGE
 
 function showBook(){
 
-    document.getElementById("home-page").style.display="none";
-
-    document.getElementById("chapters-page").style.display="none";
-
-    document.getElementById("chapter1-page").style.display="none";
+    hideAllPages();
 
     document.getElementById("book-page").style.display="block";
 
@@ -2978,11 +2993,7 @@ SHOW CHAPTERS PAGE
 
 function showChapters(){
 
-    document.getElementById("home-page").style.display="none";
-
-    document.getElementById("book-page").style.display="none";
-
-    document.getElementById("chapter1-page").style.display="none";
+    hideAllPages();
 
     document.getElementById("chapters-page").style.display="block";
 
@@ -2997,26 +3008,29 @@ SHOW CHAPTER 1
 
 function showChapter1(){
 
-    document.getElementById("home-page").style.display="none";
-
-    document.getElementById("book-page").style.display="none";
-
-    document.getElementById("chapters-page").style.display="none";
+    hideAllPages();
 
     document.getElementById("chapter1-page").style.display="block";
 
     window.scrollTo(0,0);
 
 }
+
+
+/* =========================
+SHOW CHAPTER 2
+========================= */
+
 function showChapter2(){
 
-    document.getElementById("home-page").style.display="none";
-    document.getElementById("book-page").style.display="none";
-    document.getElementById("chapters-page").style.display="none";
-    document.getElementById("chapter1-page").style.display="none";
+    hideAllPages();
+
     document.getElementById("chapter2-page").style.display="block";
 
+    window.scrollTo(0,0);
+
 }
+
 
 /* =========================
 SHOW HOME PAGE
@@ -3024,21 +3038,15 @@ SHOW HOME PAGE
 
 function showHome(){
 
-    document.getElementById("book-page").style.display="none";
+    hideAllPages();
 
-    document.getElementById("chapters-page").style.display="none";
-
-    document.getElementById("chapter1-page").style.display="none"; document.getElementById("chapter2-page").style.display="none";
-
-   document.getElementById("home-page").style.display="block";
+    document.getElementById("home-page").style.display="block";
 
     window.scrollTo(0,0);
 
 }
 
-
 </script>
-
 
 </body>
 

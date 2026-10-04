@@ -1532,8 +1532,8 @@ Chapter # 3
 <div class="chapter-buttons">
 
 <a
-    href="chapter-3.pdf"
-    target="_blank"
+    href="#chapter3"
+    onclick="showChapter3(); return false;"
     class="chapter-button chapter-read"
 >
 📖 Read
@@ -1563,8 +1563,8 @@ Chapter # 4
 <div class="chapter-buttons">
 
 <a
-    href="chapter-4.pdf"
-    target="_blank"
+    href="#chapter4"
+    onclick="showChapter4(); return false;"
     class="chapter-button chapter-read"
 >
 📖 Read
@@ -1594,8 +1594,8 @@ Chapter # 5
 <div class="chapter-buttons">
 
 <a
-    href="chapter-5.pdf"
-    target="_blank"
+    href="#chapter5"
+    onclick="showChapter5(); return false;"
     class="chapter-button chapter-read"
 >
 📖 Read
@@ -1625,11 +1625,11 @@ Chapter # 6
 <div class="chapter-buttons">
 
 <a
-    href="chapter-6.pdf"
-    target="_blank"
+    href="#chapter6"
+    onclick="showChapter6(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1656,11 +1656,11 @@ Chapter # 7
 <div class="chapter-buttons">
 
 <a
-    href="chapter-7.pdf"
-    target="_blank"
+    href="#chapter7"
+    onclick="showChapter7(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1687,11 +1687,11 @@ Chapter # 8
 <div class="chapter-buttons">
 
 <a
-    href="chapter-8.pdf"
-    target="_blank"
+    href="#chapter8"
+    onclick="showChapter8(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1718,11 +1718,11 @@ Chapter # 9
 <div class="chapter-buttons">
 
 <a
-    href="chapter-9.pdf"
-    target="_blank"
+    href="#chapter9"
+    onclick="showChapter9(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1749,11 +1749,11 @@ Chapter # 10
 <div class="chapter-buttons">
 
 <a
-    href="chapter-10.pdf"
-    target="_blank"
+    href="#chapter10"
+    onclick="showChapter10(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1780,11 +1780,11 @@ Chapter # 11
 <div class="chapter-buttons">
 
 <a
-    href="chapter-11.pdf"
-    target="_blank"
+    href="#chapter11"
+    onclick="showChapter11(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1811,11 +1811,11 @@ Chapter # 12
 <div class="chapter-buttons">
 
 <a
-    href="chapter-12.pdf"
-    target="_blank"
+    href="#chapter12"
+    onclick="showChapter12(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1842,13 +1842,12 @@ Chapter # 13
 <div class="chapter-buttons">
 
 <a
-    href="chapter-13.pdf"
-    target="_blank"
+    href="#chapter13"
+    onclick="showChapter13(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
-
 <a
     href="chapter-13.pdf"
     download="chapter-13.pdf"
@@ -1873,11 +1872,11 @@ Chapter # 14
 <div class="chapter-buttons">
 
 <a
-    href="chapter-14.pdf"
-    target="_blank"
+    href="#chapter14"
+    onclick="showChapter14(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -1904,11 +1903,11 @@ Chapter # 15
 <div class="chapter-buttons">
 
 <a
-    href="chapter-15.pdf"
-    target="_blank"
+    href="#chapter15"
+    onclick="showChapter15(); return false;"
     class="chapter-button chapter-read"
 >
-📖 Read
+    📖 Read
 </a>
 
 <a
@@ -2982,6 +2981,31 @@ function hideAllPages(){
 
     document.getElementById("chapter2-page").style.display="none";
 
+  document.getElementById("chapter3-page").style.display = "none";
+
+document.getElementById("chapter4-page").style.display = "none";
+
+document.getElementById("chapter5-page").style.display = "none";
+
+document.getElementById("chapter6-page").style.display = "none";
+
+document.getElementById("chapter7-page").style.display = "none";
+
+document.getElementById("chapter8-page").style.display = "none";
+
+document.getElementById("chapter9-page").style.display = "none";
+
+document.getElementById("chapter10-page").style.display = "none";
+
+document.getElementById("chapter11-page").style.display = "none";
+
+document.getElementById("chapter12-page").style.display = "none";
+
+document.getElementById("chapter13-page").style.display = "none";
+
+document.getElementById("chapter14-page").style.display = "none";
+
+document.getElementById("chapter15-page").style.display = "none";
 }
 
 
@@ -3044,7 +3068,202 @@ function showChapter2(){
 
 }
 
+  
+/* =========================
+   SHOW CHAPTER 3
+========================= */
 
+function showChapter3(){
+
+    hideAllPages();
+
+    document.getElementById("chapter3-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 4
+========================= */
+
+function showChapter4(){
+
+    hideAllPages();
+
+    document.getElementById("chapter4-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 5
+========================= */
+
+function showChapter5(){
+
+    hideAllPages();
+
+    document.getElementById("chapter5-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 6
+========================= */
+
+function showChapter6(){
+
+    hideAllPages();
+
+    document.getElementById("chapter6-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 7
+========================= */
+
+function showChapter7(){
+
+    hideAllPages();
+
+    document.getElementById("chapter7-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 8
+========================= */
+
+function showChapter8(){
+
+    hideAllPages();
+
+    document.getElementById("chapter8-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 9
+========================= */
+
+function showChapter9(){
+
+    hideAllPages();
+
+    document.getElementById("chapter9-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 10
+========================= */
+
+function showChapter10(){
+
+    hideAllPages();
+
+    document.getElementById("chapter10-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 11
+========================= */
+
+function showChapter11(){
+
+    hideAllPages();
+
+    document.getElementById("chapter11-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 12
+========================= */
+
+function showChapter12(){
+
+    hideAllPages();
+
+    document.getElementById("chapter12-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 13
+========================= */
+
+function showChapter13(){
+
+    hideAllPages();
+
+    document.getElementById("chapter13-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 14
+========================= */
+
+function showChapter14(){
+
+    hideAllPages();
+
+    document.getElementById("chapter14-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+
+/* =========================
+   SHOW CHAPTER 15
+========================= */
+
+function showChapter15(){
+
+    hideAllPages();
+
+    document.getElementById("chapter15-page").style.display="block";
+
+    window.scrollTo(0,0);
+
+}
+
+  
 /* =========================
 SHOW HOME PAGE
 ========================= */

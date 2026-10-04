@@ -3058,7 +3058,118 @@ function showHome(){
     window.scrollTo(0,0);
 
 }
+/* =========================
+   FEEDBACK SYSTEM
+========================= */
 
+var feedbackURL = "https://script.google.com/macros/s/AKfycbx8R3mDBU7Im_hEtyov0sUE7Ok5PAFmnMExYZeNIBa-oAQv7ZZOqmkQc4jMR_CB2YHcfQ/exec";
+
+
+function loadFeedbacks(){
+
+    var script = document.createElement("script");
+
+    script.src = feedbackURL + "?callback=displayFeedbacks";
+
+    document.body.appendChild(script);
+
+}
+
+
+function displayFeedbacks(feedbacks){
+
+    var box = document.getElementById("feedback-list");
+
+    if(!box){
+        return;
+    }
+
+    if(!feedbacks || feedbacks.length === 0){
+
+        box.innerHTML =
+        '<p style="text-align:center; color:#e1d4cb;">' +
+        'ابھی کوئی Feedback موجود نہیں۔ آپ پہلی رائے دے سکتی ہیں۔ 🤍' +
+        '</p>';
+
+        return;
+    }
+
+
+    var html =
+    '<h3 style="text-align:center; color:#d4af37; margin-bottom:20px;">' +
+    'Readers Feedback 🤍' +
+    '</h3>';
+
+
+    feedbacks.reverse().forEach(function(item){
+
+        html +=
+        '<div style="' +
+        'background:#2b1b17;' +
+        'padding:18px;' +
+        'margin:12px 0;' +
+        'border-radius:15px;' +
+        'border:1px solid #5b4036;' +
+        '">';
+
+        html +=
+        '<strong style="color:#d4af37;">' +
+        escapeFeedback(item.name) +
+        '</strong>';
+
+        html +=
+        '<p style="color:#e1d4cb; line-height:2; margin:10px 0;">' +
+        escapeFeedback(item.feedback) +
+        '</p>';
+
+        html +=
+        '</div>';
+
+    });
+
+
+    box.innerHTML = html;
+
+}
+
+
+function escapeFeedback(text){
+
+    if(!text){
+        return "";
+    }
+
+    return String(text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+
+/* Feedback send ہونے کے بعد */
+
+function feedbackSubmitted(){
+
+    alert("آپ کا Feedback کامیابی سے Send ہو گیا ہے۔ 🤍");
+
+    setTimeout(function(){
+
+        loadFeedbacks();
+
+    }, 2000);
+
+}
+
+
+/* Website کھلتے ہی Feedbacks load ہوں */
+
+window.addEventListener("load", function(){
+
+    loadFeedbacks();
+
+});
 </script>
 
 </body>

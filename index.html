@@ -1241,14 +1241,10 @@ Readers Feedback
 </p>
 
 <form
-    action="https://formsubmit.co/mussaffkhizar@gmail.com"
+    action="https://script.google.com/macros/s/AKfycbx8R3mDBU7Im_hEtyov0sUE7Ok5PAFmnMExYZeNIBa-oAQv7ZZOqmkQc4jMR_CB2YHcfQ/exec"
     method="POST"
->
-
-<input
-    type="hidden"
-    name="_subject"
-    value="خاموش کرن — Readers Feedback"
+    target="feedback-frame"
+    onsubmit="feedbackSubmitted()"
 >
 
 <input
@@ -1266,7 +1262,7 @@ Readers Feedback
 >
 
 <textarea
-    name="message"
+    name="feedback"
     placeholder="اپنی رائے یہاں لکھیں..."
     required
 ></textarea>
@@ -1276,6 +1272,18 @@ Feedback Send کریں 🤍
 </button>
 
 </form>
+
+<iframe
+    name="feedback-frame"
+    id="feedback-frame"
+    style="display:none;">
+</iframe>
+
+<div id="feedback-list" style="margin-top:30px;">
+<p style="text-align:center;">
+Feedbacks loading...
+</p>
+</div>
 
 </div>
 
